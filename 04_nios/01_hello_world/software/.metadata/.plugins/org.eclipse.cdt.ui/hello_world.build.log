@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project hello_world ****
+
+make all 
+Info: Building ../hello_world_bsp/
+make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+
+**** Build Finished ****

@@ -1,0 +1,41 @@
+!SESSION 2017-01-05 12:12:09.180 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-05 12:12:39.986
+!MESSAGE Indexed 'irq_test_bsp' (81 sources, 61 headers) in 0.59 sec: 1,138 declarations; 3,050 references; 117 unresolved inclusions; 5 syntax errors; 211 unresolved names (4.80%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-05 12:12:43.124
+!MESSAGE Indexed 'irq_test' (1 sources, 13 headers) in 0.03 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:13:44.714
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --sidp=0x4002018 --id=0x0 --timestamp=1483587485]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:13:48.473
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --sidp=0x4002018 --id=0x0 --timestamp=1483587485 /cygdrive/e/AX301/nios/irq_test/software/irq_test/irq_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:15:46.600
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:15:48.107
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --sidp=0x4002018 --id=0x0 --timestamp=1483587485]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:15:51.802
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --sidp=0x4002018 --id=0x0 --timestamp=1483587485 /cygdrive/e/AX301/nios/irq_test/software/irq_test/irq_test.elf]
+!SESSION 2017-01-05 12:18:47.006 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:19:05.291
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --sidp=0x4002018 --id=0x0 --timestamp=1483587485]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-05 12:19:08.905
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --sidp=0x4002018 --id=0x0 --timestamp=1483587485 /cygdrive/e/AX301/nios/irq_test/software/irq_test/irq_test.elf]

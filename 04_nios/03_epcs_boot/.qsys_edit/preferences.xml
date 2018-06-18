@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="277" />
+   <export preferredWidth="255" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="522" />
+   <clocksource preferredWidth="520" />
+   <frequency preferredWidth="507" />
+  </columns>
+ </clocktable>
+ <library
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Library/Memories and Memory Controllers,Library/Memories and Memory Controllers/External Memory Interfaces,Project,Library" />
+ <window width="1928" height="1060" x="-4" y="-4" />
+</preferences>

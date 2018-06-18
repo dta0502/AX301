@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include "system.h"
+#include "string.h"
+
+
+unsigned short * ram = (unsigned short *)(SDRAM_BASE+0x10000);
+
+
+int main(void)
+{
+    int i;
+
+    memset(ram,0,100);
+
+
+    for(i=0;i<100;i++){
+        *(ram++) = i;
+    }
+
+    //逆向读取ram中的数据
+    for(i=0;i<100;i++){
+        printf("%d\n",*(--ram));
+    }
+
+    return 0;
+}
+

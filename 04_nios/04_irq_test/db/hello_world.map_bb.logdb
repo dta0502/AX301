@@ -1,0 +1,3 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,kernel:inst|kernel_nios2:nios2|kernel_nios2_mult_cell:the_kernel_nios2_mult_cell|altmult_add:the_altmult_add_part_2|mult_add_95u2:auto_generated|ded_mult_ks81:ded_mult1|mac_out3,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,kernel:inst|kernel_nios2:nios2|kernel_nios2_mult_cell:the_kernel_nios2_mult_cell|altmult_add:the_altmult_add_part_1|mult_add_75u2:auto_generated|ded_mult_ks81:ded_mult1|mac_out3,

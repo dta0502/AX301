@@ -1,0 +1,61 @@
+
+**** Build of configuration Nios II for project smg_test ****
+
+make all 
+Info: Building ../smg_test_bsp/
+make --no-print-directory -C ../smg_test_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../smg_test_bsp//HAL/inc -I../smg_test_bsp/ -I../smg_test_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:53: warning: unused variable 'i'
+Info: Linking smg_test.elf
+nios2-elf-g++  -T'../smg_test_bsp//linker.x' -msys-crt0='../smg_test_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../smg_test_bsp/   -Wl,-Map=smg_test.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o smg_test.elf obj/default/main.o -lm 
+nios2-elf-insert smg_test.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x40020e0 --timestamp 1485236220 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name kernel --quartus_project_dir "E:/AX301/nios/smg_test" --jdi E:/AX301/nios/smg_test/top_level.jdi --sopcinfo E:/AX301/nios/smg_test/kernel.sopcinfo
+Info: (smg_test.elf) 37 KBytes program size (code + initialized data).
+Info:                32730 KBytes free for stack + heap.
+Info: Creating smg_test.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source smg_test.elf >smg_test.objdump
+[smg_test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project smg_test ****
+
+make all 
+Info: Building ../smg_test_bsp/
+make --no-print-directory -C ../smg_test_bsp/
+[BSP build complete]
+[smg_test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project smg_test ****
+
+make all 
+Info: Building ../smg_test_bsp/
+make --no-print-directory -C ../smg_test_bsp/
+[BSP build complete]
+[smg_test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project smg_test ****
+
+make all 
+Info: Building ../smg_test_bsp/
+make --no-print-directory -C ../smg_test_bsp/
+[BSP build complete]
+[smg_test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project smg_test ****
+
+make all 
+Info: Building ../smg_test_bsp/
+make --no-print-directory -C ../smg_test_bsp/
+[BSP build complete]
+[smg_test build complete]
+
+**** Build Finished ****

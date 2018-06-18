@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project timer_test ****
+
+make all 
+Info: Building ../timer_test_bsp/
+make --no-print-directory -C ../timer_test_bsp/
+[BSP build complete]
+[timer_test build complete]
+
+**** Build Finished ****

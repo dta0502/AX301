@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="top_level">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_jtag_uart:jtag_uart|kernel_jtag_uart_scfifo_w:the_kernel_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_bht_module:kernel_nios2_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_elg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_dc_data_module:kernel_nios2_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_kdf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_dc_tag_module:kernel_nios2_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cag1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_dc_victim_module:kernel_nios2_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_r3d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_nios2_oci:the_kernel_nios2_nios2_oci|kernel_nios2_nios2_oci_im:the_kernel_nios2_nios2_oci_im|kernel_nios2_traceram_lpm_dram_bdp_component_module:kernel_nios2_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_0a02.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_nios2_oci:the_kernel_nios2_nios2_oci|kernel_nios2_nios2_ocimem:the_kernel_nios2_nios2_ocimem|kernel_nios2_ociram_lpm_dram_bdp_component_module:kernel_nios2_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i182.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_register_bank_a_module:kernel_nios2_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_e3g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|lpm_add_sub:Add17" CBX_FILE_NAME="add_sub_qvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|PLL:inst1|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_jtag_uart:jtag_uart|kernel_jtag_uart_scfifo_r:the_kernel_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_mult_cell:the_kernel_nios2_mult_cell|altmult_add:the_altmult_add_part_1" CBX_FILE_NAME="mult_add_75u2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_ic_data_module:kernel_nios2_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cjd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_ic_tag_module:kernel_nios2_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_o1h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_mult_cell:the_kernel_nios2_mult_cell|altmult_add:the_altmult_add_part_2" CBX_FILE_NAME="mult_add_95u2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|kernel:inst|kernel_nios2:nios2|kernel_nios2_register_bank_b_module:kernel_nios2_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_f3g1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

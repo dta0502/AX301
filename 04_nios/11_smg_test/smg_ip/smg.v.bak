@@ -1,0 +1,109 @@
+/*------------ Function:dpy refreash, avalon mm interface -------------------------------------------*/ 
+
+module dpy( 
+     input csi_clk, 
+	  input csi_reset_n, 
+	  input avs_chipselect_n, 
+	  input avs_address, 
+	  input [3:0] avs_byteenable_n, 
+	  input avs_write_n, 
+	  input [31 :0] avs_writedata, 
+	  input avs_read_n, 	  
+	  output [31 :0] avs_readdata,
+	  
+	  output [5:0] coe_dsel_dig, 
+	  output [7:0] coe_led_num_dig
+	  ); 
+	  
+//段码寄存器，存储数码管的段码 
+reg [7:0] r_dig0,r_dig1,r_dig2,r_dig3,r_dig4,r_dig5,r_dig6,r_dig7; 
+	  
+//Avalon总线写时序，给寄存器赋值 
+always@(posedge csi_clk or negedge csi_reset_n) 
+   if(~csi_reset_n) 
+	   begin 
+		   r_dig0 <= 7'b0; 
+			r_dig1 <= 7'b0; 
+			r_dig2 <= 7'b0; 
+			r_dig3 <= 7'b0; 
+		end 
+	else if( ~avs_chipselect_n & ~avs_write_n & avs_address == 1'b0 ) 
+	   begin 
+		 if (~avs_byteenable_n[0]) 
+		   r_dig0 <= avs_writedata[7:0]; 
+		 if (~avs_byteenable_n[1]) 
+		   r_dig1 <= avs_writedata[15:8]; 
+		 if (~avs_byteenable_n[2]) 
+		   r_dig2 <= avs_writedata[23:16]; 
+		 if (~avs_byteenable_n[3])		 
+		   r_dig3 <= avs_writedata[31:24]; 
+		end 
+		
+always@(posedge csi_clk or negedge csi_reset_n) 
+   if(~csi_reset_n) 
+	   begin 
+		  r_dig4 <= 7'b0; 
+		  r_dig5 <= 7'b0; 
+		  r_dig6 <= 7'b0; 
+		  r_dig7 <= 7'b0;		  
+		end 
+	else if( ~avs_chipselect_n & ~avs_write_n & avs_address == 1'b1 ) 
+	   begin 
+		  if (~avs_byteenable_n[0]) 
+		     r_dig4 <= avs_writedata[7:0]; 
+		  if (~avs_byteenable_n[1]) 
+		     r_dig5 <= avs_writedata[15:8]; 
+		  if (~avs_byteenable_n[2]) 
+		     r_dig6 <= avs_writedata[23:16]; 
+		  if (~avs_byteenable_n[3]) 
+		     r_dig7 <= avs_writedata[31:24]; 
+		end 
+		
+
+//Avalon总线读时序，读寄存器值 
+reg [31:0] readdata; 
+always@( * ) 
+   if(~avs_read_n & ~avs_chipselect_n) 
+	  case(avs_address) 
+	  1'b0: readdata = {r_dig3,r_dig2,r_dig1,r_dig0}; 
+	  1'b1: readdata = {r_dig7,r_dig6,r_dig5,r_dig4}; 
+	  endcase	  
+	  
+assign avs_readdata = readdata; 
+
+//数码管动态扫描逻辑，实现6位数码管的动态显示 
+reg[23:0] counter; 
+wire [5:]
+
+always@(posedge csi_clk or negedge csi_reset_n) 
+  if(~csi_reset_n) 
+    counter <= 24'b0; 
+  else 
+    counter <= counter + 24'b1; 
+	
+assign coe_dsel_138 = counter[19:17]; 
+
+reg [7:0] led_num_dig; 
+reg [5:0] dsel_dig;
+
+always@(coe_dsel_138) 
+  begin 
+    case(coe_dsel_138) 
+	   4'h0 : begin led_num_dig <= r_dig5; dsel_dig <=6'b011111;end
+      4'h1 : begin led_num_dig <= r_dig4; dsel_dig <=6'b101111;end
+		4'h2 : begin led_num_dig <= r_dig3; dsel_dig <=6'b110111;end
+		4'h3 : begin led_num_dig <= r_dig2; dsel_dig <=6'b111011;end
+		4'h4 : begin led_num_dig <= r_dig1; dsel_dig <=6'b111101;end
+		4'h5 : begin led_num_dig <= r_dig0; dsel_dig <=6'b011110;end
+	endcase 
+ end 
+ 
+ assign coe_led_num_dig = led_num_dig; 
+ assign coe_dsel_dig = dsel_dig; 
+ 
+ endmodule		
+ 
+ 
+		
+		
+		

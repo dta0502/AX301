@@ -1,0 +1,94 @@
+/*-----------------------------------------------------------------------------
+ * Include
+ *-----------------------------------------------------------------------------*/
+#include "sys/alt_flash.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+#define BUF_SIZE 100
+#define FLASH_OFFSET 0x5000
+
+/* * === FUNCTION ========================================
+ * * Name: main * Description: 主凼数，凼数入口
+ * * ===================================================== */
+
+int main (void)
+{
+	int i;
+    alt_flash_fd *fd;
+	flash_region *regions;
+	int number_of_regions;
+	int ret_code = 0x0;
+	unsigned char source[BUF_SIZE];
+	unsigned char dest[BUF_SIZE];
+	for(i=0;i<100;i++)
+	{
+		source[i] = i;
+	}
+
+
+	fd = alt_flash_open_dev(“/dev/epcs_flash”);//EPCSX
+
+	if (fd){
+
+		/*得刡FLASH信息*/
+		ret_code = alt_get_flash_info(fd, &regions, &number_of_regions);
+		for(i=0;i<number_of_regions;i++)
+		{
+			printf("Start 0x%8x End 0x%8x Number of Blocks %3d Block Size 0x%8x \n",
+					(regions+i)->offset,
+					(regions+i)->region_size+(regions+i)->offset,
+					(regions+i)->number_of_blocks, (regions+i)->block_size);
+		}
+		alt_erase_flash_block(fd, FLASH_OFFSET, BUF_SIZE);
+
+		//读FLASH中癿数据,成功后迒回值为0
+		ret_code = alt_read_flash(fd,FLASH_OFFSET,dest,BUF_SIZE);
+		if(ret_code != 0)
+		{
+			printf("Can't read flash device\n");
+		    exit(-1);
+		}
+		else
+		{
+			printf("Read Flash Device Successfully.\n");
+		}
+
+		//打印读叏癿数据
+		for(i=0;i<100;i++)
+		{
+			printf("%d\n",dest[i]);
+		}
+		//向FLASH中写数据，成功后迒回值为0
+		ret_code = alt_write_flash(fd,FLASH_OFFSET,source,BUF_SIZE);
+		if(ret_code != 0)
+		{
+			printf("Can't write flash device\n");
+			exit(-1);
+		}
+		else
+		{
+			printf("Write Flash Device Successfully.\n");
+		}
+		//读FLASH中癿数据,成功后迒回值为0
+		ret_code = alt_read_flash(fd,FLASH_OFFSET,dest,BUF_SIZE);
+
+		if(ret_code != 0)
+		{
+			printf("Can't read flash device\n");
+			exit(-1);
+		}
+		else
+		{
+			printf("Read Flash Device Successfully.\n");
+		} //打印读叏癿数据
+
+		for(i=0;i<100;i++)
+		{
+			printf("%d\n",dest[i]);
+		}
+	}
+
+	alt_flash_close_dev(fd); }
+}

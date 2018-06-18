@@ -1,0 +1,9 @@
+Warning (10037): Verilog HDL or VHDL warning at kernel_nios2.v(2066): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_nios2.v(2068): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_nios2.v(2224): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_nios2.v(3143): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_sdram.v(316): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_sdram.v(326): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_sdram.v(336): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_sdram.v(680): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at kernel_epcs_flash.v(401): conditional expression evaluates to a constant

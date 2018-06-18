@@ -1,0 +1,13 @@
+!SESSION 2017-01-05 10:19:05.779 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-05 10:21:04.698
+!MESSAGE Indexed 'led_test_bsp' (81 sources, 61 headers) in 0.50 sec: 1,138 declarations; 3,050 references; 117 unresolved inclusions; 5 syntax errors; 211 unresolved names (4.80%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-05 10:21:10.002
+!MESSAGE Indexed 'led_test' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

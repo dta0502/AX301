@@ -1,0 +1,32 @@
+!SESSION 2017-01-09 18:39:12.722 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-09 18:41:00.216
+!MESSAGE Indexed 'sdram_test_bsp' (89 sources, 68 headers) in 0.61 sec: 1,287 declarations; 3,681 references; 127 unresolved inclusions; 5 syntax errors; 239 unresolved names (4.59%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-09 18:41:01.473
+!MESSAGE Indexed 'sdram_test' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-09 18:54:02.308
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-09 18:54:04.446
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/sdram_test/software/sdram_test/sdram_test.elf]
+!SESSION 2017-01-09 20:26:41.673 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-09 20:31:20.671
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-09 20:31:22.966
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/sdram_test/software/sdram_test/sdram_test.elf]

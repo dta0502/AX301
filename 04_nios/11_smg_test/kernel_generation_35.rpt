@@ -1,0 +1,119 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=E:/AX301/nios/smg_test/ --output-directory=E:/AX301/nios/smg_test/kernel/ --report-file=bsf:E:/AX301/nios/smg_test/kernel.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6F17C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=E:/AX301/nios/smg_test/kernel.qsys
+Progress: Loading smg_test/kernel.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 12.1]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 12.1]
+Progress: Parameterizing module nios2
+Progress: Adding sdram [altera_avalon_new_sdram_controller 12.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid [altera_avalon_sysid_qsys 12.1]
+Progress: Parameterizing module sysid
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 12.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding pio_led [altera_avalon_pio 12.1]
+Progress: Parameterizing module pio_led
+Progress: Adding epcs_flash [altera_avalon_epcs_flash_controller 12.1]
+Progress: Parameterizing module epcs_flash
+Progress: Adding pio_key [altera_avalon_pio 12.1]
+Progress: Parameterizing module pio_key
+Progress: Adding uart [altera_avalon_uart 12.1]
+Progress: Parameterizing module uart
+Progress: Adding rtc_sclk [altera_avalon_pio 12.1]
+Progress: Parameterizing module rtc_sclk
+Progress: Adding rtc_nrst [altera_avalon_pio 12.1]
+Progress: Parameterizing module rtc_nrst
+Progress: Adding rtc_data [altera_avalon_pio 12.1]
+Progress: Parameterizing module rtc_data
+Progress: Adding timer1 [altera_avalon_timer 12.1]
+Progress: Parameterizing module timer1
+Progress: Adding timer2 [altera_avalon_timer 12.1]
+Progress: Parameterizing module timer2
+Progress: Adding scl [altera_avalon_pio 12.1]
+Progress: Parameterizing module scl
+Progress: Adding sda [altera_avalon_pio 12.1]
+Progress: Parameterizing module sda
+Progress: Adding smg_controller_0 [smg_controller 1.0]
+Progress: Parameterizing module smg_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: kernel.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: kernel.sysid: Time stamp will be automatically updated when this component is generated.
+Info: kernel.pio_key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: kernel.rtc_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: kernel.sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=E:/AX301/nios/smg_test/ --output-directory=E:/AX301/nios/smg_test/kernel/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:E:/AX301/nios/smg_test/kernel.sopcinfo --report-file=html:E:/AX301/nios/smg_test/kernel.html --report-file=qip:E:/AX301/nios/smg_test/kernel/synthesis/kernel.qip --report-file=cmp:E:/AX301/nios/smg_test/kernel.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6F17C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=E:/AX301/nios/smg_test/kernel.qsys
+Progress: Loading smg_test/kernel.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 12.1]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 12.1]
+Progress: Parameterizing module nios2
+Progress: Adding sdram [altera_avalon_new_sdram_controller 12.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid [altera_avalon_sysid_qsys 12.1]
+Progress: Parameterizing module sysid
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 12.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding pio_led [altera_avalon_pio 12.1]
+Progress: Parameterizing module pio_led
+Progress: Adding epcs_flash [altera_avalon_epcs_flash_controller 12.1]
+Progress: Parameterizing module epcs_flash
+Progress: Adding pio_key [altera_avalon_pio 12.1]
+Progress: Parameterizing module pio_key
+Progress: Adding uart [altera_avalon_uart 12.1]
+Progress: Parameterizing module uart
+Progress: Adding rtc_sclk [altera_avalon_pio 12.1]
+Progress: Parameterizing module rtc_sclk
+Progress: Adding rtc_nrst [altera_avalon_pio 12.1]
+Progress: Parameterizing module rtc_nrst
+Progress: Adding rtc_data [altera_avalon_pio 12.1]
+Progress: Parameterizing module rtc_data
+Progress: Adding timer1 [altera_avalon_timer 12.1]
+Progress: Parameterizing module timer1
+Progress: Adding timer2 [altera_avalon_timer 12.1]
+Progress: Parameterizing module timer2
+Progress: Adding scl [altera_avalon_pio 12.1]
+Progress: Parameterizing module scl
+Progress: Adding sda [altera_avalon_pio 12.1]
+Progress: Parameterizing module sda
+Progress: Adding smg_controller_0 [smg_controller 1.0]
+Progress: Parameterizing module smg_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: kernel.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: kernel.sysid: Time stamp will be automatically updated when this component is generated.
+Info: kernel.pio_key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: kernel.rtc_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: kernel.sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: kernel: Generating kernel "kernel" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 17 modules, 73 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 35 modules, 145 connections
+Info: merlin_domain_transform: After transform: 70 modules, 384 connections
+Info: merlin_router_transform: After transform: 88 modules, 456 connections
+Info: merlin_traffic_limiter_transform: After transform: 90 modules, 466 connections
+Info: merlin_burst_transform: After transform: 91 modules, 470 connections
+Info: reset_adaptation_transform: After transform: 92 modules, 366 connections
+Info: merlin_network_to_switch_transform: After transform: 127 modules, 440 connections
+Info: merlin_width_transform: After transform: 129 modules, 446 connections
+Info: limiter_update_transform: After transform: 129 modules, 448 connections
+Info: merlin_interrupt_mapper_transform: After transform: 130 modules, 451 connections
+Warning: kernel: "No matching role found for epcs_flash:epcs_control_port:endofpacket (endofpacket)"
+Warning: kernel: "No matching role found for epcs_flash:epcs_control_port:dataavailable (dataavailable)"
+Warning: kernel: "No matching role found for epcs_flash:epcs_control_port:readyfordata (readyfordata)"
+Warning: kernel: "No matching role found for uart:s1:dataavailable (dataavailable)"
+Warning: kernel: "No matching role found for uart:s1:readyfordata (readyfordata)"
+Error: Generation stopped, 116 or more modules remaining
+Info: kernel: Done kernel" with 35 modules, 1 files, 615382 bytes
+Error: ip-generate failed with exit code 1: 1 Error, 5 Warnings
+Info: Stopping: Create HDL design files for synthesis

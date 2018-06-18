@@ -1,0 +1,89 @@
+!SESSION 2017-01-10 21:41:11.876 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-10 21:42:12.931
+!MESSAGE Indexed 'flash_simple_bsp' (89 sources, 68 headers) in 0.62 sec: 1,287 declarations; 3,681 references; 127 unresolved inclusions; 5 syntax errors; 239 unresolved names (4.59%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-10 21:42:14.197
+!MESSAGE Indexed 'flash_simple' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-10 21:45:09.412
+!MESSAGE Indexed 'flash_fine_bsp' (89 sources, 68 headers) in 0.34 sec: 1,287 declarations; 3,681 references; 127 unresolved inclusions; 5 syntax errors; 239 unresolved names (4.59%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-10 21:45:10.966
+!MESSAGE Indexed 'flash_fine' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2017-01-11 12:49:26.632 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 12:50:57.983
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 12:51:00.293
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_fine/flash_fine.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 12:51:50.092
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 12:51:50.762
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 12:51:53.070
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_simple/flash_simple.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 13:00:54.319
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 13:00:55.107
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 13:00:57.449
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_fine/flash_fine.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 13:01:51.302
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 13:01:51.967
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 13:01:54.274
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_fine/flash_fine.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:02:29.870
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:02:30.673
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:02:33.005
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_simple/flash_simple.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:02:54.564
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:02:55.238
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:02:57.553
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_simple/flash_simple.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:05:44.697
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:05:45.361
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x40020d8 --id=0x0 --timestamp=1483947755]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-11 14:05:47.670
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x40020d8 --id=0x0 --timestamp=1483947755 /cygdrive/e/AX301/nios/flash_test/software/flash_fine/flash_fine.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 4 2017-01-11 17:03:02.523
+!MESSAGE Unable to read project settings

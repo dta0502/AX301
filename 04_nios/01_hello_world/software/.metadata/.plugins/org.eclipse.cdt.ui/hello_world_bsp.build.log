@@ -1,0 +1,7 @@
+
+**** Clean-only build of configuration Nios II for project hello_world_bsp ****
+
+make clean 
+[BSP clean complete]
+
+**** Build Finished ****

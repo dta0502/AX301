@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=E\:\\AX301\\nios\\eeprom_test\\software\\eeprom_test
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\AX301\\nios\\eeprom_test\\kernel.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\AX301\\nios\\eeprom_test\\software\\eeprom_test_bsp

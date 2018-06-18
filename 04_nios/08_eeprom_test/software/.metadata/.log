@@ -1,0 +1,19 @@
+!SESSION 2017-01-09 15:49:52.073 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-09 15:55:11.250
+!MESSAGE Indexed 'eeprom_test_bsp' (89 sources, 68 headers) in 0.64 sec: 1,287 declarations; 3,681 references; 127 unresolved inclusions; 5 syntax errors; 239 unresolved names (4.59%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-09 15:55:12.556
+!MESSAGE Indexed 'eeprom_test' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-09 16:41:39.550
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x40020d8]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-01-09 16:41:41.876
+!MESSAGE Executing: [C:/altera/12.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x40020d8 /cygdrive/e/AX301/nios/eeprom_test/software/eeprom_test/eeprom_test.elf]

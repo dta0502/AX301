@@ -1,0 +1,180 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 352 440)
+	(text "kernel" (rect 159 -1 182 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 424 20 436)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 144 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 101 82 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 144 112)(line_width 1))
+	)
+	(port
+		(pt 0 408)
+		(input)
+		(text "epcs_flash_external_data0" (rect 0 0 107 12)(font "Arial" (font_size 8)))
+		(text "epcs_flash_external_data0" (rect 4 397 154 408)(font "Arial" (font_size 8)))
+		(line (pt 0 408)(pt 144 408)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "sdram_addr[12..0]" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "sdram_addr[12..0]" (rect 4 141 106 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 144 152)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "sdram_ba[1..0]" (rect 0 0 60 12)(font "Arial" (font_size 8)))
+		(text "sdram_ba[1..0]" (rect 4 157 88 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 144 168)(line_width 3))
+	)
+	(port
+		(pt 0 184)
+		(output)
+		(text "sdram_cas_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "sdram_cas_n" (rect 4 173 70 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 144 184)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(output)
+		(text "sdram_cke" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "sdram_cke" (rect 4 189 58 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 144 200)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(output)
+		(text "sdram_cs_n" (rect 0 0 51 12)(font "Arial" (font_size 8)))
+		(text "sdram_cs_n" (rect 4 205 64 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 144 216)(line_width 1))
+	)
+	(port
+		(pt 0 248)
+		(output)
+		(text "sdram_dqm[1..0]" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "sdram_dqm[1..0]" (rect 4 237 94 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 144 248)(line_width 3))
+	)
+	(port
+		(pt 0 264)
+		(output)
+		(text "sdram_ras_n" (rect 0 0 55 12)(font "Arial" (font_size 8)))
+		(text "sdram_ras_n" (rect 4 253 70 264)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 144 264)(line_width 1))
+	)
+	(port
+		(pt 0 280)
+		(output)
+		(text "sdram_we_n" (rect 0 0 53 12)(font "Arial" (font_size 8)))
+		(text "sdram_we_n" (rect 4 269 64 280)(font "Arial" (font_size 8)))
+		(line (pt 0 280)(pt 144 280)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(output)
+		(text "pio_led_export[3..0]" (rect 0 0 77 12)(font "Arial" (font_size 8)))
+		(text "pio_led_export[3..0]" (rect 4 309 124 320)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 144 320)(line_width 3))
+	)
+	(port
+		(pt 0 360)
+		(output)
+		(text "epcs_flash_external_dclk" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "epcs_flash_external_dclk" (rect 4 349 148 360)(font "Arial" (font_size 8)))
+		(line (pt 0 360)(pt 144 360)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(output)
+		(text "epcs_flash_external_sce" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "epcs_flash_external_sce" (rect 4 365 142 376)(font "Arial" (font_size 8)))
+		(line (pt 0 376)(pt 144 376)(line_width 1))
+	)
+	(port
+		(pt 0 392)
+		(output)
+		(text "epcs_flash_external_sdo" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "epcs_flash_external_sdo" (rect 4 381 142 392)(font "Arial" (font_size 8)))
+		(line (pt 0 392)(pt 144 392)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(bidir)
+		(text "sdram_dq[15..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "sdram_dq[15..0]" (rect 4 221 94 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 144 232)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 129 43 276 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 67 316 144)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 115 83 260 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 149 107 340 224)(font "Arial" (color 0 0 0)))
+		(text "sdram" (rect 108 123 246 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "addr" (rect 149 147 322 304)(font "Arial" (color 0 0 0)))
+		(text "ba" (rect 149 163 310 336)(font "Arial" (color 0 0 0)))
+		(text "cas_n" (rect 149 179 328 368)(font "Arial" (color 0 0 0)))
+		(text "cke" (rect 149 195 316 400)(font "Arial" (color 0 0 0)))
+		(text "cs_n" (rect 149 211 322 432)(font "Arial" (color 0 0 0)))
+		(text "dq" (rect 149 227 310 464)(font "Arial" (color 0 0 0)))
+		(text "dqm" (rect 149 243 316 496)(font "Arial" (color 0 0 0)))
+		(text "ras_n" (rect 149 259 328 528)(font "Arial" (color 0 0 0)))
+		(text "we_n" (rect 149 275 322 560)(font "Arial" (color 0 0 0)))
+		(text "pio_led" (rect 103 291 248 595)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 149 315 334 640)(font "Arial" (color 0 0 0)))
+		(text "epcs_flash_external" (rect 27 331 168 675)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "dclk" (rect 149 355 322 720)(font "Arial" (color 0 0 0)))
+		(text "sce" (rect 149 371 316 752)(font "Arial" (color 0 0 0)))
+		(text "sdo" (rect 149 387 316 784)(font "Arial" (color 0 0 0)))
+		(text "data0" (rect 149 403 328 816)(font "Arial" (color 0 0 0)))
+		(text " kernel " (rect 323 424 694 858)(font "Arial" ))
+		(line (pt 145 52)(pt 145 76)(line_width 1))
+		(line (pt 146 52)(pt 146 76)(line_width 1))
+		(line (pt 145 92)(pt 145 116)(line_width 1))
+		(line (pt 146 92)(pt 146 116)(line_width 1))
+		(line (pt 145 132)(pt 145 284)(line_width 1))
+		(line (pt 146 132)(pt 146 284)(line_width 1))
+		(line (pt 145 300)(pt 145 324)(line_width 1))
+		(line (pt 146 300)(pt 146 324)(line_width 1))
+		(line (pt 145 340)(pt 145 412)(line_width 1))
+		(line (pt 146 340)(pt 146 412)(line_width 1))
+		(line (pt 144 32)(pt 208 32)(line_width 1))
+		(line (pt 208 32)(pt 208 424)(line_width 1))
+		(line (pt 144 424)(pt 208 424)(line_width 1))
+		(line (pt 144 32)(pt 144 424)(line_width 1))
+		(line (pt 0 0)(pt 352 0)(line_width 1))
+		(line (pt 352 0)(pt 352 440)(line_width 1))
+		(line (pt 0 440)(pt 352 440)(line_width 1))
+		(line (pt 0 0)(pt 0 440)(line_width 1))
+	)
+)

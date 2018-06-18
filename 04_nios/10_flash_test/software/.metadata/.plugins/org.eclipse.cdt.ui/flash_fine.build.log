@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project flash_fine ****
+
+make all 
+Info: Building ../flash_fine_bsp/
+make --no-print-directory -C ../flash_fine_bsp/
+[BSP build complete]
+[flash_fine build complete]
+
+**** Build Finished ****

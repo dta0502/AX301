@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project timestamp ****
+
+make all 
+Info: Building ../timestamp_bsp/
+make --no-print-directory -C ../timestamp_bsp/
+[BSP build complete]
+[timestamp build complete]
+
+**** Build Finished ****
