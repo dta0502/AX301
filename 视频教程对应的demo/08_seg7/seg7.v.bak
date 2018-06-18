@@ -1,0 +1,7 @@
+module seg7(
+	input clk,
+	input rst_n,
+	output reg[5:0] seg_sel,
+	output reg[7:0] seg_data
+);
+endmodule 

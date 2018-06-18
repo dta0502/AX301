@@ -1,0 +1,14 @@
+
+State Machine - |uart_tx|state
+Name state.S_STOP state.S_BIT7 state.S_BIT6 state.S_BIT5 state.S_BIT4 state.S_BIT3 state.S_BIT2 state.S_BIT1 state.S_BIT0 state.S_START state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+state.S_START 0 0 0 0 0 0 0 0 0 1 1 
+state.S_BIT0 0 0 0 0 0 0 0 0 1 0 1 
+state.S_BIT1 0 0 0 0 0 0 0 1 0 0 1 
+state.S_BIT2 0 0 0 0 0 0 1 0 0 0 1 
+state.S_BIT3 0 0 0 0 0 1 0 0 0 0 1 
+state.S_BIT4 0 0 0 0 1 0 0 0 0 0 1 
+state.S_BIT5 0 0 0 1 0 0 0 0 0 0 1 
+state.S_BIT6 0 0 1 0 0 0 0 0 0 0 1 
+state.S_BIT7 0 1 0 0 0 0 0 0 0 0 1 
+state.S_STOP 1 0 0 0 0 0 0 0 0 0 1 

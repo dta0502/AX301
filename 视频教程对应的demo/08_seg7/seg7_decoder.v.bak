@@ -1,0 +1,15 @@
+module seg7_decoder
+(
+	input[3:0] bin_data,
+	output reg[6:0] seg7_data
+);
+
+always@(*)
+begin
+	case(bin_data)
+		4'd0:seg7_data <= 7'b0111_111;
+		4'd1:seg7_data <= 7'b0000_110;
+		4'd1:seg7_data <= 7'b1001_011;
+	endcase
+end
+endmodule 

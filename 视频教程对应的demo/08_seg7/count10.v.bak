@@ -1,0 +1,8 @@
+module count10(
+	input clk,
+	input en,
+	input rst_n,
+	output reg[3:0] data,
+	output reg t
+);
+end

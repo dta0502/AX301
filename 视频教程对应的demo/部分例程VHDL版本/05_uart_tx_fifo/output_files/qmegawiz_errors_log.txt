@@ -1,0 +1,13 @@
+
+
+F:/AX4010/VHDL/05_uart_tx_fifo/uart_buf.vhd
+
+Dec 14 04PM:29:14>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+uart_buf.v
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?

@@ -1,0 +1,42 @@
+|uart_tx
+clk => txd~reg0.CLK
+clk => bit_timer[0].CLK
+clk => bit_timer[1].CLK
+clk => bit_timer[2].CLK
+clk => bit_timer[3].CLK
+clk => bit_timer[4].CLK
+clk => bit_timer[5].CLK
+clk => bit_timer[6].CLK
+clk => bit_timer[7].CLK
+clk => bit_timer[8].CLK
+clk => bit_timer[9].CLK
+clk => bit_timer[10].CLK
+clk => bit_timer[11].CLK
+clk => bit_timer[12].CLK
+clk => bit_timer[13].CLK
+clk => bit_timer[14].CLK
+clk => bit_timer[15].CLK
+clk => state~1.DATAIN
+rst_n => txd~reg0.PRESET
+rst_n => bit_timer[0].ACLR
+rst_n => bit_timer[1].ACLR
+rst_n => bit_timer[2].ACLR
+rst_n => bit_timer[3].ACLR
+rst_n => bit_timer[4].ACLR
+rst_n => bit_timer[5].ACLR
+rst_n => bit_timer[6].ACLR
+rst_n => bit_timer[7].ACLR
+rst_n => bit_timer[8].ACLR
+rst_n => bit_timer[9].ACLR
+rst_n => bit_timer[10].ACLR
+rst_n => bit_timer[11].ACLR
+rst_n => bit_timer[12].ACLR
+rst_n => bit_timer[13].ACLR
+rst_n => bit_timer[14].ACLR
+rst_n => bit_timer[15].ACLR
+rst_n => state~3.DATAIN
+key => Selector17.IN3
+key => Selector18.IN1
+txd <= txd~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

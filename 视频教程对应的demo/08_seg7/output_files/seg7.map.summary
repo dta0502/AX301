@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 12 21:40:07 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : seg7
+Top-level Entity Name : seg7
+Family : Cyclone IV E
+Total logic elements : 201
+    Total combinational functions : 201
+    Dedicated logic registers : 111
+Total registers : 111
+Total pins : 16
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

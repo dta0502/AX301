@@ -1,0 +1,8 @@
+
+State Machine - |led_sm|state
+Name state.S_LED3 state.S_LED2 state.S_LED1 state.S_LED0 state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 
+state.S_LED0 0 0 0 1 1 
+state.S_LED1 0 0 1 0 1 
+state.S_LED2 0 1 0 0 1 
+state.S_LED3 1 0 0 0 1 

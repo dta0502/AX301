@@ -1,0 +1,19 @@
+module top(
+		//sys
+	input clk,	
+	input sys_key0,
+	
+	output rtc_sclk,
+	output rtc_ce,
+	inout rtc_data
+	);
+ds1302_test ds1302_test_m0(
+	.rst(~sys_key0),
+	.clk(clk),
+	.ds1302_ce(rtc_ce),
+	.ds1302_sclk(rtc_sclk),
+	.ds1302_io(rtc_data)
+);
+endmodule 
+	
+	

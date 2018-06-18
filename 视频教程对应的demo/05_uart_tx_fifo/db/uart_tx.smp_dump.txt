@@ -1,0 +1,25 @@
+
+State Machine - |uart_tx_fifo|rd_state
+Name rd_state.S_RD_IDLE rd_state.S_RD_SEND rd_state.S_RD_FIFO 
+rd_state.S_RD_IDLE 0 0 0 
+rd_state.S_RD_FIFO 1 0 1 
+rd_state.S_RD_SEND 1 1 0 
+
+State Machine - |uart_tx_fifo|wr_state
+Name wr_state.S_WR_SEND 
+wr_state.S_WR_IDLE 0 
+wr_state.S_WR_SEND 1 
+
+State Machine - |uart_tx_fifo|uart_tx:uart_tx_m0|state
+Name state.S_STOP state.S_BIT7 state.S_BIT6 state.S_BIT5 state.S_BIT4 state.S_BIT3 state.S_BIT2 state.S_BIT1 state.S_BIT0 state.S_START state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+state.S_START 0 0 0 0 0 0 0 0 0 1 1 
+state.S_BIT0 0 0 0 0 0 0 0 0 1 0 1 
+state.S_BIT1 0 0 0 0 0 0 0 1 0 0 1 
+state.S_BIT2 0 0 0 0 0 0 1 0 0 0 1 
+state.S_BIT3 0 0 0 0 0 1 0 0 0 0 1 
+state.S_BIT4 0 0 0 0 1 0 0 0 0 0 1 
+state.S_BIT5 0 0 0 1 0 0 0 0 0 0 1 
+state.S_BIT6 0 0 1 0 0 0 0 0 0 0 1 
+state.S_BIT7 0 1 0 0 0 0 0 0 0 0 1 
+state.S_STOP 1 0 0 0 0 0 0 0 0 0 1 

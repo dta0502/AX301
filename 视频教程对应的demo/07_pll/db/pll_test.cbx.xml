@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pll_test">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|sys_pll:sys_pll_m0|altpll:altpll_component" CBX_FILE_NAME="sys_pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|uart_buf:uart_buf_m0|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_f441.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

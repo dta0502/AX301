@@ -1,0 +1,14 @@
+module seg7_scan(
+	input clk,
+	input rst_n,
+	output[5:0] seg_sel,
+	output[7:0] seg_data,
+	input[7:0] seg_data_0,
+	input[7:0] seg_data_1,
+	input[7:0] seg_data_2,
+	input[7:0] seg_data_3,
+	input[7:0] seg_data_4,
+	input[7:0] seg_data_5
+);
+
+endmodule 

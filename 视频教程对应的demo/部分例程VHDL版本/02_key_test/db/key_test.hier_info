@@ -1,0 +1,19 @@
+|key_test
+clk => led_r[0].CLK
+clk => led_r[1].CLK
+clk => led_r[2].CLK
+clk => led_r[3].CLK
+clk => led_r1[0].CLK
+clk => led_r1[1].CLK
+clk => led_r1[2].CLK
+clk => led_r1[3].CLK
+key_in[0] => led_r[0].DATAIN
+key_in[1] => led_r[1].DATAIN
+key_in[2] => led_r[2].DATAIN
+key_in[3] => led_r[3].DATAIN
+led_out[0] <= led_r1[0].DB_MAX_OUTPUT_PORT_TYPE
+led_out[1] <= led_r1[1].DB_MAX_OUTPUT_PORT_TYPE
+led_out[2] <= led_r1[2].DB_MAX_OUTPUT_PORT_TYPE
+led_out[3] <= led_r1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

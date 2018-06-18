@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="uart_tx">
+		<CBX_INST_ENTRY INSTANCE_NAME="|uart_tx_fifo|uart_buf:uart_buf_m0|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_f441.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

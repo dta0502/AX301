@@ -1,0 +1,29 @@
+C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/src/ds1302_io.v {1 {vlog -work work -vopt -nocovercells C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/src/ds1302_io.v
+Model Technology ModelSim SE-64 vlog 10.0c Compiler 2011.07 Jul 21 2011
+-- Compiling module ds1302_io
+
+Top level modules:
+	ds1302_io
+
+} {} {}} C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/src/ds1302.v {1 {vlog -work work -vopt -nocovercells C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/src/ds1302.v
+Model Technology ModelSim SE-64 vlog 10.0c Compiler 2011.07 Jul 21 2011
+-- Compiling module ds1302
+
+Top level modules:
+	ds1302
+
+} {} {}} C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/src/spi_master.v {1 {vlog -work work -vopt -nocovercells C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/src/spi_master.v
+Model Technology ModelSim SE-64 vlog 10.0c Compiler 2011.07 Jul 21 2011
+-- Compiling module spi_master
+
+Top level modules:
+	spi_master
+
+} {} {}} C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/sim/tb.v {1 {vlog -work work -vopt -nocovercells C:/Users/Administrator/Desktop/522_r6/project_17_ds1302_test/sim/tb.v
+Model Technology ModelSim SE-64 vlog 10.0c Compiler 2011.07 Jul 21 2011
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}}

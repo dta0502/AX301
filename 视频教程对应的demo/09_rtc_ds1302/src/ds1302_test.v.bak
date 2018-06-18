@@ -1,0 +1,159 @@
+module ds1302_test(
+	input rst,
+	input clk,
+	output ds1302_ce,
+	output ds1302_sclk,
+	inout ds1302_io
+);
+localparam S_IDLE    =    0;
+localparam S_READ    =    1;
+localparam S_WRITE   =    2;
+reg[2:0] state,next_state;
+wire tck;
+wire[15:0] addr;
+wire[7:0] reg_write_data;
+wire[7:0] reg_read_data;
+wire reg_write;
+wire write_time;
+reg write_time_d0;
+reg write_time_d1;
+reg write_time_req;
+reg write_time_req_latch;
+wire write_time_ack;
+reg read_time_req;
+wire read_time_ack;
+wire[7:0] write_second;
+wire[7:0] write_minute;
+wire[7:0] write_hour;
+wire[7:0] write_date;
+wire[7:0] write_month;
+wire[7:0] write_week;
+wire[7:0] write_year;
+wire[7:0] read_second;
+wire[7:0] read_minute;
+wire[7:0] read_hour;
+wire[7:0] read_date;
+wire[7:0] read_month;
+wire[7:0] read_week;
+wire[7:0] read_year;
+my_jtag MY_JTAG(
+	.tck(tck),
+	.addr(addr),
+	.data_out(reg_write_data),
+	.data_in(reg_read_data),
+	.wr_en(reg_write)
+);
+ds1302 ds1302_m0(
+	.rst(rst),
+	.clk(clk),
+	.ds1302_ce(ds1302_ce),
+	.ds1302_sclk(ds1302_sclk),
+	.ds1302_io(ds1302_io),
+	.write_time_req(write_time_req),
+	.write_time_ack(write_time_ack),
+	.write_second(write_second),
+	.write_minute(write_minute),
+	.write_hour(write_hour),
+	.write_date(write_date),
+	.write_month(write_month),
+	.write_week(write_week),
+	.write_year(write_year),
+	.read_time_req(read_time_req),
+	.read_time_ack(read_time_ack),
+	.read_second(read_second),
+	.read_minute(read_minute),
+	.read_hour(read_hour),
+	.read_date(read_date),
+	.read_month(read_month),
+	.read_week(read_week),
+	.read_year(read_year)
+	
+);
+always@(posedge clk)
+begin
+	write_time_d0 <= write_time;
+	write_time_d1 <= write_time_d0;
+end
+
+always@(posedge clk)
+begin
+	if(write_time_ack)
+		write_time_req <= 1'b0;
+	else if(state == S_WRITE)
+		write_time_req <= 1'b1;
+end
+
+always@(posedge clk)
+begin
+	if(state == S_WRITE)
+		write_time_req_latch <= 1'b0;
+	else if(~write_time_d1 && write_time_d0)
+		write_time_req_latch <= 1'b1;
+end
+
+always@(posedge clk)
+begin
+	if(read_time_ack)
+		read_time_req <= 1'b0;
+	else if(state == S_READ)
+		read_time_req <= 1'b1;
+end
+always@(posedge clk or posedge rst)
+begin
+	if(rst)
+		state <= S_IDLE;
+	else
+		state <= next_state;	
+end
+always@(*)
+begin
+	case(state)
+		S_IDLE:
+			if(write_time_req_latch)
+				next_state <= S_WRITE;
+			else
+				next_state <= S_READ;
+		S_WRITE:
+			if(write_time_ack)
+				next_state <= S_IDLE;
+			else
+				next_state <= S_WRITE;
+		S_READ:
+			if(read_time_ack)
+				next_state <= S_IDLE;
+			else
+				next_state <= S_READ;
+		default:
+			next_state <= S_IDLE;
+	endcase
+end
+
+jtag_reg_table REG_TABLE
+(
+	.clk         ( tck             ),
+	.rst         ( rst             ),
+	.fpga_ver    ( 16'h25          ),
+	.fpga_date   ( 32'h2013_09_22  ),
+	.fpga_time   (                 ),	
+	.address     ( addr            ),
+	.write       ( reg_write       ),
+	.write_data  ( reg_write_data  ),
+	.read_data   ( reg_read_data   ),
+	
+	.write_time(write_time),
+	.write_second(write_second     ),
+	.write_minute(write_minute     ),
+	.write_hour  (write_hour       ),
+	.write_date  (write_date       ),
+	.write_month (write_month      ),
+	.write_week  (write_week       ),
+	.write_year  (write_year       ),
+	.read_second (read_second      ),
+	.read_minute (read_minute      ),
+	.read_hour   (read_hour        ),
+	.read_date   (read_date        ),
+	.read_month  (read_month       ),
+	.read_week   (read_week        ),
+	.read_year   (read_year        )	
+);
+endmodule 

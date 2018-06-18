@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at my_jtag.v(9): object "WR_ADDR" differs only in case from object "wr_addr" in the same scope
+Info (10281): Verilog HDL Declaration information at my_jtag.v(10): object "WR_DATA" differs only in case from object "wr_data" in the same scope
+Info (10281): Verilog HDL Declaration information at my_jtag.v(11): object "RD_DATA" differs only in case from object "rd_data" in the same scope
