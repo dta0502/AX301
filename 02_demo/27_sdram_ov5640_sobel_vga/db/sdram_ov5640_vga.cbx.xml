@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sdram_ov5640_vga">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|MAC_3:x0|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_si74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[12]" CBX_FILE_NAME="add_sub_sqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[3]" CBX_FILE_NAME="add_sub_cpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|LineBuffer_3:b0|altshift_taps:altshift_taps_component" CBX_FILE_NAME="shift_taps_7mn.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|MAC_3:x1|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_si74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|MAC_3:y0|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_si74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[13]" CBX_FILE_NAME="add_sub_tqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[4]" CBX_FILE_NAME="add_sub_dpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|system_ctrl:u_system_ctrl|pll_64:u_pll_64|altpll:altpll_component" CBX_FILE_NAME="pll_64_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|MAC_3:x2|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_si74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|MAC_3:y1|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_si74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[14]" CBX_FILE_NAME="add_sub_uqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[5]" CBX_FILE_NAME="add_sub_epc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|MAC_3:y2|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_si74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[15]" CBX_FILE_NAME="add_sub_vqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[6]" CBX_FILE_NAME="add_sub_fpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|lpm_mult:Mult0" CBX_FILE_NAME="mult_rct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|system_ctrl:u_system_ctrl|sdram_pll:u_sdram_pll|altpll:altpll_component" CBX_FILE_NAME="sdram_pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[7]" CBX_FILE_NAME="add_sub_nqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|lpm_mult:Mult1" CBX_FILE_NAME="mult_rct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|PA_3:pa0|parallel_add:parallel_add_component" CBX_FILE_NAME="par_add_o9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[0]" CBX_FILE_NAME="add_sub_8pc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[8]" CBX_FILE_NAME="add_sub_oqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_4en1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|PA_3:pa1|parallel_add:parallel_add_component" CBX_FILE_NAME="par_add_o9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[10]" CBX_FILE_NAME="add_sub_qqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[1]" CBX_FILE_NAME="add_sub_apc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[9]" CBX_FILE_NAME="add_sub_pqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[11]" CBX_FILE_NAME="add_sub_rqc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|SQRT:sqrt0|altsqrt:altsqrt_component|lpm_add_sub:subtractors[2]" CBX_FILE_NAME="add_sub_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_sobel_vga|sdram_vga_top:u_sdram_vga_top|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_nen1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

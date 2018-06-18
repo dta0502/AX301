@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sd_audio">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sd_audio|pll:pll_inst|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sd_audio|ram_rw_control:ram_rw_control_inst|altsyncram:myram_rtl_0" CBX_FILE_NAME="altsyncram_60e1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sd_audio|ram_rw_control:ram_rw_control_inst|altsyncram:myram_rtl_1" CBX_FILE_NAME="altsyncram_m6d1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

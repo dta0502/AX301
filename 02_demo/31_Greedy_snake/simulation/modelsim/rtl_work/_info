@@ -1,0 +1,90 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim
+vApple_generate_module
+IaXKOIbSd9Eb[LUI9>iYE?0
+VAdH4h77:DWWU046535d[I0
+Z1 dD:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim
+w1350391050
+8D:/quartus/quartus/HZP_my_projects/Greedy_snake/apple_generate_module.v
+FD:/quartus/quartus/HZP_my_projects/Greedy_snake/apple_generate_module.v
+L0 1
+Z2 OV;L;6.6d;45
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake -O0
+n@apple_generate_module
+!s100 Sh4LWL3fm7kQU2Fjj3z[L0
+!s85 0
+!s101 -O0
+vGame_ctrl_module
+IK`N35QceWG]lL]MI>K7AJ1
+Vgc:cIe?09PCcOO28i<E4>1
+R1
+w1350546482
+8D:/quartus/quartus/HZP_my_projects/Greedy_snake/game_ctrl_module.v
+FD:/quartus/quartus/HZP_my_projects/Greedy_snake/game_ctrl_module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@game_ctrl_module
+!s100 A08F4H__Mi@X;6RPMhZe:0
+!s85 0
+!s101 -O0
+vGreedy_snake
+I2D6fTc[S8L=EPeV1mC3Vf3
+V8LDIcQ0;n05n3Fz5I9F5n2
+R1
+w1350525873
+8D:/quartus/quartus/HZP_my_projects/Greedy_snake/greedy_snake.v
+FD:/quartus/quartus/HZP_my_projects/Greedy_snake/greedy_snake.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@greedy_snake
+!s100 :4>lXKkgOYhOC@kVFRciN1
+!s85 0
+!s101 -O0
+vSnake_ctrl_module
+!s100 fgzmU9lWaJZ5K^J[f6Plb0
+IKWU69m4cn1o^Dk2:mc[lS0
+V7nDY2db4TbN<fJ3Q:M83[2
+R1
+w1350524974
+8D:/quartus/quartus/HZP_my_projects/Greedy_snake/snake_ctrl_module.v
+FD:/quartus/quartus/HZP_my_projects/Greedy_snake/snake_ctrl_module.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+R4
+n@snake_ctrl_module
+vSnake_pll
+IPU1hjKk6EF;4Y3`WBQNhh0
+ViD8fOl9BB:^GQ]6KobYFe0
+R1
+w1350525797
+8D:/quartus/quartus/HZP_my_projects/Greedy_snake/Snake_pll.v
+FD:/quartus/quartus/HZP_my_projects/Greedy_snake/Snake_pll.v
+L0 39
+R2
+r1
+31
+R3
+n@snake_pll
+R4
+!s100 EC`FTn6^fz[ZFSH0@eSN>2
+!s85 0
+!s101 -O0

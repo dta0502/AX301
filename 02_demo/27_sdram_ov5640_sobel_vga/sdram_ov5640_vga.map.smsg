@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at Sobel.v(21): object "X1" differs only in case from object "x1" in the same scope
+Info (10281): Verilog HDL Declaration information at Sobel.v(21): object "X2" differs only in case from object "x2" in the same scope
+Info (10281): Verilog HDL Declaration information at Sobel.v(26): object "Y1" differs only in case from object "y1" in the same scope
+Info (10281): Verilog HDL Declaration information at Sobel.v(26): object "Y2" differs only in case from object "y2" in the same scope

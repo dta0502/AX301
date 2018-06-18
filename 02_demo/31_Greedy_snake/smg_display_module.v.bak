@@ -1,0 +1,201 @@
+//数码管计分模块
+module Smg_display_module
+
+(
+	input Clk_50mhz,
+	input Rst_n,
+	
+	input Body_add_sig,
+	
+	output reg [7:0] Smg_duan,
+	output reg [3:0] Smg_we
+);
+/***************************************************************************/
+	reg [15:0] Points;
+	reg [31:0] Count1;
+	
+	always@(posedge Clk_50mhz or negedge Rst_n)
+	begin
+		if(!Rst_n)
+			begin
+				Smg_duan <= 0;
+				Count1 <= 0;
+				Smg_we <= 0;	
+			end
+		else
+			begin
+				if(Count1 <= 20_0000)	
+					begin
+						Count1 <= Count1 + 1;
+						
+						if(Count1==5_0000)
+							begin
+								Smg_we <= 4'b1110;
+								case(Points[3:0])
+									4'b0000:
+												Smg_duan <= 8'b1100_0000;
+									4'b0001:
+												Smg_duan <= 8'b1111_1001;
+									4'b0010:
+												Smg_duan <= 8'b1010_0100;
+									
+									4'b0011:
+												Smg_duan <= 8'b1011_0000;
+									4'b0100:
+												Smg_duan <= 8'b1001_1001;
+									4'b0101:
+												Smg_duan <= 8'b1001_0010;
+									
+									4'b0110:
+												Smg_duan <= 8'b1000_0010;
+									4'b0111:
+												Smg_duan <= 8'b1111_1000;
+									4'b1000:
+												Smg_duan <= 8'b1000_0000;
+									4'b1001:
+												Smg_duan <= 8'b1001_0000;
+									default;
+								endcase
+							end
+						else if(Count1==10_0000)
+								begin
+									Smg_we <= 4'b1101;
+									
+									case(Points[7:4])
+										4'b0000:
+														Smg_duan <= 8'b1100_0000;
+										4'b0001:
+														Smg_duan <= 8'b1111_1001;
+										4'b0010:
+														Smg_duan <= 8'b1010_0100;
+										
+										4'b0011:
+														Smg_duan <= 8'b1011_0000;
+										4'b0100:
+														Smg_duan <= 8'b1001_1001;
+										4'b0101:
+														Smg_duan <= 8'b1001_0010;
+										
+										4'b0110:
+														Smg_duan <= 8'b1000_0010;
+										4'b0111:
+														Smg_duan <= 8'b1111_1000;
+										4'b1000:
+														Smg_duan <= 8'b1000_0000;
+										4'b1001:
+														Smg_duan <= 8'b1001_0000;
+						//				default;							
+									endcase
+								end
+						
+						else if(Count1==15_0000)
+								begin
+									Smg_we <= 4'b1011;
+									case(Points[11:8])
+										4'b0000:
+													Smg_duan <= 8'b1100_0000;
+										4'b0001:
+													Smg_duan <= 8'b1111_1001;
+										4'b0010:
+													Smg_duan <= 8'b1010_0100;
+										
+										4'b0011:
+													Smg_duan <= 8'b1011_0000;
+										4'b0100:
+													Smg_duan <= 8'b1001_1001;
+										4'b0101:
+													Smg_duan <= 8'b1001_0010;
+										
+										4'b0110:
+													Smg_duan <= 8'b1000_0010;
+										4'b0111:
+													Smg_duan <= 8'b1111_1000;
+										4'b1000:
+													Smg_duan <= 8'b1000_0000;
+										4'b1001:
+													Smg_duan <= 8'b1001_0000;
+							//			default;					
+									endcase
+								end
+						
+						else if(Count1==20_0000)
+								begin
+									case(Points[15:12])
+										4'b0000:
+													Smg_duan <= 8'b1100_0000;
+										4'b0001:
+													Smg_duan <= 8'b1111_1001;
+										4'b0010:
+													Smg_duan <= 8'b1010_0100;
+										
+										4'b0011:
+													Smg_duan <= 8'b1011_0000;
+										4'b0100:
+													Smg_duan <= 8'b1001_1001;
+										4'b0101:
+													Smg_duan <= 8'b1001_0010;
+										
+										4'b0110:
+													Smg_duan <= 8'b1000_0010;
+										4'b0111:
+													Smg_duan <= 8'b1111_1000;
+										4'b1000:
+													Smg_duan <= 8'b1000_0000;
+										4'b1001:
+													Smg_duan <= 8'b1001_0000;
+							//			default;					
+									endcase
+								end				
+					end
+				else
+					Count1 <= 0;
+			end	
+	end
+	
+	
+	reg Eaten_sig;
+	
+	always@(posedge Clk_50mhz or negedge Rst_n)
+		begin
+			if(!Rst_n)
+				begin
+					Points <= 0;
+					Eaten_sig <= 0;
+				end
+			else //这里可以用个CASE写
+				begin
+					case(Eaten_sig)
+						0:
+							begin
+								if(Body_add_sig)
+									begin
+										if(Points[3:0]<9)//这里把每个4位分开管理了，因为要显示9,1001，所以每四个位分别控制个，时，百。。。
+											Points[3:0] <= Points[3:0] + 4'd1;
+										else
+											begin
+												Points[3:0] <= 0;
+												if(Points[7:4]<9)
+													Points[7:4] <= Points[7:4] + 4'd1;
+												else
+													begin
+														Points[7:4] <= 0;
+														if(Points[11:8]<9)
+															Points[11:8] <= Points[11:8] + 4'd1;
+														else 
+															begin
+																Points[11:8] <= 0;
+																Points[15:12] <= Points[15:12] + 4'd1;
+															end
+													end
+											end								//BCD码转换
+											Eaten_sig <= 1;
+									end
+							end
+						1:
+							if(!Body_add_sig)
+								Eaten_sig <= 0;	
+					endcase
+				end							
+		end	
+		
+endmodule

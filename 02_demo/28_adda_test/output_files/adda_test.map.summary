@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Sep 23 16:38:23 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : adda_test
+Top-level Entity Name : adda_test
+Family : Cyclone IV E
+Total logic elements : 666
+    Total combinational functions : 436
+    Dedicated logic registers : 504
+Total registers : 504
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 36,864
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

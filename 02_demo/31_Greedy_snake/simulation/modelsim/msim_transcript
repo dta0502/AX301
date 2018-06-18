@@ -1,0 +1,97 @@
+# Reading D:/Quartus11.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Greedy_snake_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Quartus11.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Quartus11.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/Snake_pll.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module Snake_pll
+# 
+# Top level modules:
+# 	Snake_pll
+# vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/greedy_snake.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module Greedy_snake
+# 
+# Top level modules:
+# 	Greedy_snake
+# vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/game_ctrl_module.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module Game_ctrl_module
+# 
+# Top level modules:
+# 	Game_ctrl_module
+# vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/apple_generate_module.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module Apple_generate_module
+# 
+# Top level modules:
+# 	Apple_generate_module
+# vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/snake_ctrl_module.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module Snake_ctrl_module
+# 
+# Top level modules:
+# 	Snake_ctrl_module
+# vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/vga_ctrl_module.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module Vga_ctrl_module
+# ** Error: D:/quartus/quartus/HZP_my_projects/Greedy_snake/vga_ctrl_module.v(104): near "else": syntax error, unexpected "else"
+# ** Error: D:/quartus/quartus/HZP_my_projects/Greedy_snake/vga_ctrl_module.v(120): near "else": syntax error, unexpected "else"
+# ** Error: D:/Quartus11.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Greedy_snake_run_msim_rtl_verilog.do line 13
+# D:/Quartus11.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+D:/quartus/quartus/HZP_my_projects/Greedy_snake {D:/quartus/quartus/HZP_my_projects/Greedy_snake/vga_ctrl_module..."
+vsim -voptargs=+acc work.Apple_generate_module
+# vsim -voptargs=+acc work.Apple_generate_module 
+# Loading work.Apple_generate_module
+run
+run
+add wave sim:/Apple_generate_module/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim -voptargs=+acc work.Apple_generate_module work.Game_ctrl_module work.Greedy_snake work.Snake_ctrl_module work.Snake_pll
+# vsim -voptargs=+acc work.Apple_generate_module work.Game_ctrl_module work.Greedy_snake work.Snake_ctrl_module work.Snake_pll 
+# Loading work.Apple_generate_module
+# Loading work.Game_ctrl_module
+# Loading work.Greedy_snake
+# Loading work.Snake_pll
+# ** Error: (vsim-3033) D:/quartus/quartus/HZP_my_projects/Greedy_snake/Snake_pll.v(107): Instantiation of 'altpll' failed. The design unit was not found.
+#         Region: /Greedy_snake/U1
+#         Searched libraries:
+#             D:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim\rtl_work
+# Loading work.Snake_ctrl_module
+# ** Error: (vsim-3033) D:/quartus/quartus/HZP_my_projects/Greedy_snake/greedy_snake.v(145): Instantiation of 'Vga_ctrl_module' failed. The design unit was not found.
+#         Region: /Greedy_snake
+#         Searched libraries:
+#             D:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim\rtl_work
+# ** Error: (vsim-3033) D:/quartus/quartus/HZP_my_projects/Greedy_snake/greedy_snake.v(163): Instantiation of 'Key_check_module' failed. The design unit was not found.
+#         Region: /Greedy_snake
+#         Searched libraries:
+#             D:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim\rtl_work
+# ** Error: (vsim-3033) D:/quartus/quartus/HZP_my_projects/Greedy_snake/greedy_snake.v(176): Instantiation of 'Smg_display_module' failed. The design unit was not found.
+#         Region: /Greedy_snake
+#         Searched libraries:
+#             D:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim\rtl_work
+# ** Error: (vsim-3033) D:/quartus/quartus/HZP_my_projects/Greedy_snake/Snake_pll.v(107): Instantiation of 'altpll' failed. The design unit was not found.
+#         Region: /Snake_pll
+#         Searched libraries:
+#             D:\quartus\quartus\HZP_my_projects\Greedy_snake\simulation\modelsim\rtl_work
+# Error loading design

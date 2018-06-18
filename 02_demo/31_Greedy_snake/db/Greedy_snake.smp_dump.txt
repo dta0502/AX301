@@ -1,0 +1,7 @@
+
+State Machine - |Greedy_snake|Snake_ctrl_module:U4|Direct_r
+Name Direct_r.Up Direct_r.Left Direct_r.Down Direct_r.Right 
+Direct_r.Right 0 0 0 0 
+Direct_r.Down 0 0 1 1 
+Direct_r.Left 0 1 0 1 
+Direct_r.Up 1 0 0 1 

@@ -1,0 +1,153 @@
+module Greedy_snake
+//顶层模块
+(
+	input Clk,
+	input Rst_n,
+	
+	input Left,
+	input Right,
+	input Up,
+	input Down,
+
+	output Hsync_sig,
+	output Vsync_sig,
+	
+	output [2:0] Vga_rgb,//RGB
+	output [7:0] Smg_duan,//数码管段选
+	output [3:0] Smg_we//数码管位选
+	
+);
+
+/***************************************************************************/
+	wire Key_left;
+	wire Key_right;
+	wire Key_up;
+	wire Key_down;
+	
+	wire [1:0] Object;//对象
+	
+	wire [9:0] Pixel_x;
+	wire [9:0] Pixel_y;
+	
+	wire [5:0] Apple_x;
+	wire [4:0] Apple_y;
+	
+	wire [5:0] Head_x;
+	wire [5:0] Head_y;
+	
+	wire Body_add_sig;
+	
+	wire[1:0] Game_status;
+	
+	wire Hit_wall_sig;
+	wire Hit_body_sig;
+	
+	wire Flash_sig;
+	wire Restart_sig;
+	wire [6:0] Body_num;
+	
+/***************************************************************************/
+/***************************************************************************/
+	
+	
+	wire Clk_50mhz;
+//	pll U1    //锁相环将输入的20M晶振倍频到50M
+	
+	Snake_pll	U1 
+	(
+	.inclk0 ( Clk ),
+	.c0 ( Clk_50mhz )
+	);
+	
+	Game_ctrl_module	 U2
+	(
+		.Clk_50mhz(Clk_50mhz),
+		.Rst_n(Rst_n),
+		.Key_left(Key_left),
+		.Key_right(Key_right),
+		.Key_up(Key_up),
+		.Key_down(Key_down),
+		.Game_status(Game_status),
+		.Hit_wall_sig(Hit_wall_sig),
+		.Hit_body_sig(Hit_body_sig),
+		.Flash_sig(Flash_sig),
+		.Restart_sig(Restart_sig)
+		
+	);
+			
+		Apple_generate_module	 U3
+	(
+		.Clk_50mhz(Clk_50mhz),
+		.Rst_n(Rst_n),
+		.Apple_x(Apple_x),
+		.Apple_y(Apple_y),
+		.Head_x(Head_x),
+		.Head_y(Head_y),
+		.Body_add_sig(Body_add_sig)
+	
+	);
+	
+	
+	Snake_ctrl_module		U4
+	(
+		.Clk_50mhz(Clk_50mhz),
+		.Rst_n(Rst_n),
+		.Key_left(Key_left),
+		.Key_right(Key_right),
+		.Key_up(Key_up),
+		.Key_down(Key_down),
+		.Object(Object),
+		.Pixel_x(Pixel_x),
+		.Pixel_y(Pixel_y),
+		.Head_x(Head_x),
+		.Head_y(Head_y),
+		.Body_add_sig(Body_add_sig),
+		.Game_status(Game_status),
+		.Body_num(Body_num),
+		.Hit_body_sig(Hit_body_sig),
+		.Hit_wall_sig(Hit_wall_sig),
+		.Flash_sig(Flash_sig)
+	);
+	
+	Vga_ctrl_module	 U5
+	(
+		.Clk_50mhz(Clk_50mhz),
+		.Rst_n(Rst_n),
+		.Hsync_sig(Hsync_sig),
+		.Vsync_sig(Vsync_sig),
+		.Object(Object),
+		.Vga_rgb(Vga_rgb),
+		.Pixel_x(Pixel_x),
+		.Pixel_y(Pixel_y),
+		.Apple_x(Apple_x),
+		.Apple_y(Apple_y)
+	
+	);
+/***************************************************************************/
+	Key_check_module	 U6
+	(
+		.Clk_50mhz(Clk_50mhz),
+		.Rst_n(Rst_n),
+		.Left(Left),
+		.Right(Right),
+		.Up(Up),
+		.Down(Down),
+		.Key_left(Key_left),
+		.Key_right(Key_right),
+		.Key_up(Key_up),
+		.Key_down(Key_down)		
+	
+	);
+	
+/***************************************************************************/
+	Smg_display_module	 U7
+	(
+		.Clk_50mhz(Clk_50mhz),
+		.Rst_n(Rst_n),	
+		.Body_add_sig(Body_add_sig),
+		.Smg_duan(Smg_duan),
+		.Smg_we(Smg_we)
+	
+	);
+	
+endmodule

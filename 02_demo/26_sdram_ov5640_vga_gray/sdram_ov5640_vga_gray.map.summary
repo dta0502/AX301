@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 11 09:59:53 2017
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : sdram_ov5640_vga_gray
+Top-level Entity Name : sdram_ov5640_vga_gray
+Family : Cyclone IV E
+Total logic elements : 1,390
+    Total combinational functions : 1,239
+    Dedicated logic registers : 579
+Total registers : 579
+Total pins : 79
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

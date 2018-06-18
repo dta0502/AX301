@@ -1,0 +1,86 @@
+module vga_select_module 
+(
+/*	input ready_VSYNC_Sig,
+	input ready_HSYNC_Sig,
+	input ready_VGA_red,
+	input ready_VGA_green,
+	input ready_VGA_blue,
+	
+	input win_VSYNC_Sig,
+	input win_HSYNC_Sig,
+	input win_VGA_red,
+	input win_VGA_green,
+	input win_VGA_blue,
+*/
+	input end_VSYNC_Sig,
+	input end_HSYNC_Sig,
+	input end_VGA_red,
+	input end_VGA_green,
+	input end_VGA_blue,
+	
+	input start_VSYNC_Sig,
+	input start_HSYNC_Sig,
+	input start_VGA_red,
+	input start_VGA_green,
+	input start_VGA_blue,
+	
+//	input ready_sig,
+//	input win_sig,
+	input end_sig,
+	input start,
+	
+	output VSYNC_Sig_out,
+	output HSYNC_Sig_out,
+	
+	output VGA_red_out,
+	output VGA_green_out,
+	output VGA_blue_out
+);
+	
+	reg VSYNC_Sig;
+	reg HSYNC_Sig;
+	reg VGA_red;
+	reg VGA_green;
+	reg VGA_blue;	
+	
+	always @ ( end_sig or start)
+		  begin
+			case({end_sig,start})
+						
+				2'b0010:
+					begin
+						VSYNC_Sig = end_VSYNC_Sig; 
+						HSYNC_Sig = end_HSYNC_Sig;
+						VGA_red = end_VGA_red;
+						VGA_green = end_VGA_green;
+						VGA_blue = end_VGA_blue; 									
+					end				
+				2'b0001:
+					begin
+						VSYNC_Sig = start_VSYNC_Sig; 
+						HSYNC_Sig = start_HSYNC_Sig;
+						VGA_red = start_VGA_red;
+						VGA_green = start_VGA_green;
+						VGA_blue = start_VGA_blue; 									
+					end			
+				default:
+					begin
+						VSYNC_Sig = start_VSYNC_Sig; 
+						HSYNC_Sig = start_HSYNC_Sig;
+						VGA_red = start_VGA_red;
+						VGA_green = start_VGA_green;
+						VGA_blue = start_VGA_blue; 						
+					end
+			endcase
+		end
+		
+	assign	VSYNC_Sig_out = VSYNC_Sig; 
+	assign  HSYNC_Sig_out = HSYNC_Sig;
+	assign	VGA_red_out = VGA_red;
+	assign	VGA_green_out = VGA_green;
+	assign	VGA_blue_out = VGA_blue; 		
+
+endmodule					
+						
+						
+									

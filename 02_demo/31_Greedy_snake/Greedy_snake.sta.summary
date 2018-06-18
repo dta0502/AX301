@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 37.476
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 41.113
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 24.719
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk'
+Slack : 24.858
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 49.716
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 38.255
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 41.611
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 24.716
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk'
+Slack : 24.855
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 49.716
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 44.291
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 45.936
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk'
+Slack : 24.423
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Snake_pll:U1|altpll:altpll_component|_clk0'
+Slack : 24.795
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Snake_pll:U1|altpll:altpll_component|_clk1'
+Slack : 49.732
+TNS   : 0.000
+
+------------------------------------------------------------

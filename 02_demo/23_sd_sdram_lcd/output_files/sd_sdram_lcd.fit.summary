@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Dec 28 14:28:45 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : sd_sdram_lcd
+Top-level Entity Name : sd_sdram_lcd
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 1,685 / 6,272 ( 27 % )
+    Total combinational functions : 1,552 / 6,272 ( 25 % )
+    Dedicated logic registers : 1,011 / 6,272 ( 16 % )
+Total registers : 1011
+Total pins : 74 / 180 ( 41 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 276,480 ( 6 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

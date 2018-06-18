@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 22 21:28:57 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : rtc_test
+Top-level Entity Name : rtc_test
+Family : Cyclone IV E
+Total logic elements : 399
+    Total combinational functions : 357
+    Dedicated logic registers : 157
+Total registers : 157
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

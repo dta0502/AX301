@@ -1,0 +1,75 @@
+
+	module Key_check_module
+//按键检测模块 延时消抖
+(	input Clk_50mhz,
+	input Rst_n,
+	
+	input Left,
+	input Right,
+	input Up,
+	input Down,
+	
+	output reg Key_left,
+	output reg Key_right,
+	output reg Key_up,
+	output reg Key_down
+
+);
+
+/***************************************************************************/
+	reg [31:0] Count1;//32位计数器，用来计数100MS
+	
+	reg Key_left2;
+	reg Key_right2;
+	reg Key_up2;
+	reg Key_down2;
+	
+	always@(posedge Clk_50mhz or negedge Rst_n)
+		begin
+			if(!Rst_n)
+				begin
+					Count1 <= 0;
+					
+					Key_left <= 0;
+					Key_right <= 0;
+					Key_up <= 0;
+					Key_down <= 0;
+					
+					Key_left2 <= 0;
+					Key_right2 <= 0;
+					Key_up2 <= 0;
+					Key_down2 <= 0;						
+				end
+			else 
+				begin
+					if(Count1 == 5_0000)//100MS的延时，按键按下电平为0
+						begin//按键松手才会有效果，因为last比原信号滞后一个周期，这里的算法是检测到last为0，原信号变为1，则说明刚才按键按下了
+							Count1 <= 0;//计数器清零
+							
+							Key_left2 <= Left;
+							Key_right2 <= Right;
+							Key_up2 <= Up;
+							Key_down2 <= Down;
+							
+							if(Key_left2 == 0 && Left == 1)
+								Key_left <= 1;
+							if(Key_right2 == 0 && Right == 1)
+								Key_right <= 1;
+							if(Key_up2 == 0 && Up == 1)
+								Key_up <= 1;
+							if(Key_down2 == 0 && Down == 1)
+								Key_down <= 1;	
+						end
+					else
+						begin
+							Count1 <= Count1 + 1;
+							//如果没有按键按下，则保持上下左右信号都为低
+							Key_left <= 0;
+							Key_right <= 0;
+							Key_up <= 0;
+							Key_down <= 0;
+						end
+				end	
+		end				
+	
+endmodule

@@ -1,0 +1,3 @@
+v1
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|lpm_mult:Mult1|mult_rct:auto_generated|mac_mult5,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,sdram_vga_top:u_sdram_vga_top|Sobel:Sobel_m0|lpm_mult:Mult0|mult_rct:auto_generated|mac_mult5,

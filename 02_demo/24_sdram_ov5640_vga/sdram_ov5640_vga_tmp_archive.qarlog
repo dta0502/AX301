@@ -1,0 +1,52 @@
+Quartus II Archive log --	E:/AX301/verilog/sdram_ov5640_vga/sdram_ov5640_vga_tmp_archive.qarlog
+
+Archive:	E:/AX301/verilog/sdram_ov5640_vga/sdram_ov5640_vga_tmp_archive.qar
+Date:		Wed Mar 15 09:54:02 2017
+Quartus II 64-Bit		12.1 Build 177 11/07/2012 SJ Full Version
+
+	=========== Files Selected: ===========
+E:/AX301/verilog/sdram_ov5640_vga/AX301.tcl
+E:/AX301/verilog/sdram_ov5640_vga/core/osd_rom.v
+E:/AX301/verilog/sdram_ov5640_vga/incremental_db/compiled_partitions/sdram_ov5640_vga.db_info
+E:/AX301/verilog/sdram_ov5640_vga/pll_64.cmp
+E:/AX301/verilog/sdram_ov5640_vga/pll_64.ppf
+E:/AX301/verilog/sdram_ov5640_vga/pll_64.qip
+E:/AX301/verilog/sdram_ov5640_vga/pll_64.vhd
+E:/AX301/verilog/sdram_ov5640_vga/sdram_ov5640_vga.qpf
+E:/AX301/verilog/sdram_ov5640_vga/sdram_ov5640_vga.qsf
+E:/AX301/verilog/sdram_ov5640_vga/sdram_ov5640_vga_assignment_defaults.qdf
+E:/AX301/verilog/sdram_ov5640_vga/sdram_ov7670_vga.tcl
+E:/AX301/verilog/sdram_ov5640_vga/sdram_pll.v
+E:/AX301/verilog/sdram_ov5640_vga/src/cmos_i2c_ov7670/CMOS_Capture.v
+E:/AX301/verilog/sdram_ov5640_vga/src/cmos_i2c_ov7670/i2c_com.v
+E:/AX301/verilog/sdram_ov5640_vga/src/cmos_i2c_ov7670/power_on_delay.v
+E:/AX301/verilog/sdram_ov5640_vga/src/cmos_i2c_ov7670/reg_config.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram.sdc
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_ov5640_vga.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/lcd_ip/lcd_display.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/lcd_ip/lcd_driver.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/lcd_ip/lcd_para.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/lcd_ip/lcd_top.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/dcfifo_ctrl.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/rdfifo.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdbank_switch.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdram_2fifo_top.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdram_cmd.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdram_ctrl.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdram_para.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdram_top.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/sdram_wr_data.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_ip/wrfifo.v
+E:/AX301/verilog/sdram_ov5640_vga/src/sdram_vga_ip/sdram_vga_top.v
+E:/AX301/verilog/sdram_ov5640_vga/src/system_ctrl.v
+E:/AX301/verilog/sdram_ov5640_vga/stp1.stp
+	======= Total: 35 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Mar 15 09:54:03 2017
+Source archive file:	E:/AX301/verilog/sdram_ov5640_vga/sdram_ov5640_vga_tmp_archive.qar
+Archive was extracted into	E:/AX301/verilog/sdram_ov5640_sobel_vga/
+		 - successfully.

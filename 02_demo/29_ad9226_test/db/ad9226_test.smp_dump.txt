@@ -1,0 +1,6 @@
+
+State Machine - |ad9226_test|uart:u3|uart_stat
+Name uart_stat.000 uart_stat.010 uart_stat.001 
+uart_stat.000 0 0 0 
+uart_stat.001 1 0 1 
+uart_stat.010 1 1 0 

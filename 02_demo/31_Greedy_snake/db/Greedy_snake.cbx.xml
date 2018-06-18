@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Greedy_snake">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Greedy_snake|start_and_end_top:start_and_end_top|end_top:end_top|ex5_over_rom:U4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_oe81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Greedy_snake|start_and_end_top:start_and_end_top|start_top:start_top|ex5_start_rom:U4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vg81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

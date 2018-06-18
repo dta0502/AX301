@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dY:\project\AX\AX4010\AX301_CD_A\02_demo\4_led_test\simulation\modelsim
+T_opt
+Z1 V@_fO7:f]Q=hL`UZVY?=gF3
+Z2 04 11 4 work led_test_tb fast 0
+Z3 =1-2c534a028423-587c7a60-46-20d0
+Z4 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z5 n@_opt
+Z6 OL;O;10.0c;49
+Z7 dY:\project\AX\AX4010\AX301_CD_A\02_demo\4_led_test\simulation\modelsim
+vled_test
+Z8 IJfP;XE;SlLz8be>CLoYD43
+Z9 VQ1eTR5_5BbOzzbJKi0fN]2
+R7
+Z10 w1484401785
+Z11 8Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/led_test.v
+Z12 FY:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/led_test.v
+L0 3
+Z13 OL;L;10.0c;49
+r1
+31
+Z14 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z15 !s100 Tb;eX;4HT9V_;f<1lgLdW1
+!s85 0
+Z16 !s108 1484552798.178000
+Z17 !s107 Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/led_test.v|
+Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test|Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/led_test.v|
+Z19 !s92 -vlog01compat -work work +incdir+Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vled_test_tb
+Z20 IZQBVJa0kM3YH[Q;[ko[<l2
+Z21 ViJ]K<XJJjdnLO;MV]A>NX1
+R7
+R10
+Z22 8Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/simulation/modelsim/led_test.vt
+Z23 FY:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/simulation/modelsim/led_test.vt
+L0 3
+R13
+r1
+31
+R14
+Z24 !s100 3LgO>]JQif1gIY7jN5?RM3
+!s85 0
+Z25 !s108 1484552798.627000
+Z26 !s107 Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/simulation/modelsim/led_test.vt|
+Z27 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/simulation/modelsim|Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/simulation/modelsim/led_test.vt|
+Z28 !s92 -vlog01compat -work work +incdir+Y:/project/AX/AX4010/AX301_CD_A/02_demo/4_led_test/simulation/modelsim -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF

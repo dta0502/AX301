@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr 17 12:53:17 2017
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : DEMO_A
+Top-level Entity Name : DEMO_A
+Family : Cyclone IV E
+Total logic elements : 2,168
+    Total combinational functions : 1,920
+    Dedicated logic registers : 1,230
+Total registers : 1230
+Total pins : 90
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

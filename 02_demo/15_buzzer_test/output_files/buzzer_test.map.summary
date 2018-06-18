@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 23 14:16:07 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : buzzer_test
+Top-level Entity Name : sos_generator_module
+Family : Cyclone IV E
+Total logic elements : 122
+    Total combinational functions : 122
+    Dedicated logic registers : 62
+Total registers : 62
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

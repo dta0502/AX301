@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sdram_ov5640_vga_gray">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_vga_gray|rgb_to_ycbcr:rgb_to_ycbcr_m0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_vga_gray|rgb_to_ycbcr:rgb_to_ycbcr_m0|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_lgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_vga_gray|sdram_vga_top:u_sdram_vga_top|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_nen1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_vga_gray|sdram_vga_top:u_sdram_vga_top|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_4en1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_vga_gray|system_ctrl:u_system_ctrl|pll_64:u_pll_64|altpll:altpll_component" CBX_FILE_NAME="pll_64_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_ov5640_vga_gray|system_ctrl:u_system_ctrl|sdram_pll:u_sdram_pll|altpll:altpll_component" CBX_FILE_NAME="sdram_pll_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

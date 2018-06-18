@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 24 15:01:51 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : audio_test
+Top-level Entity Name : audio_test
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 3,338 / 6,272 ( 53 % )
+    Total combinational functions : 1,843 / 6,272 ( 29 % )
+    Dedicated logic registers : 2,843 / 6,272 ( 45 % )
+Total registers : 2843
+Total pins : 49 / 180 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 154,624 / 276,480 ( 56 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

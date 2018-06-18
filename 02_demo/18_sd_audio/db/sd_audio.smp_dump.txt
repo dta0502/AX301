@@ -1,0 +1,11 @@
+
+State Machine - |sd_audio|mywav:mywav_inst|reg_config:reg_config_inst|config_step
+Name config_step.00 config_step.10 config_step.01 
+config_step.00 0 0 0 
+config_step.01 1 0 1 
+config_step.10 1 1 0 
+
+State Machine - |sd_audio|sd_read:sd_read_inst|read_step
+Name read_step.01 
+read_step.00 0 
+read_step.01 1 

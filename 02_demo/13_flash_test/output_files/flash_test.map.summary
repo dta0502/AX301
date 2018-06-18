@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 23 11:35:29 2016
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : flash_test
+Top-level Entity Name : flash_test
+Family : Cyclone IV E
+Total logic elements : 1,148
+    Total combinational functions : 779
+    Dedicated logic registers : 784
+Total registers : 784
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 172,032
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

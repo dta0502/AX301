@@ -1,0 +1,42 @@
+Quartus II Archive log --	E:/AX301/21_sd_sdram_vga/sd_sdram_vga_tmp_archive.qarlog
+
+Archive:	E:/AX301/21_sd_sdram_vga/sd_sdram_vga_tmp_archive.qar
+Date:		Wed Dec 28 13:16:03 2016
+Quartus II 64-Bit		12.1 Build 177 11/07/2012 SJ Full Version
+
+	=========== Files Selected: ===========
+E:/AX301/21_sd_sdram_vga/incremental_db/compiled_partitions/sd_sdram_vga.db_info
+E:/AX301/21_sd_sdram_vga/output_files/Chain1.cdf
+E:/AX301/21_sd_sdram_vga/output_files/Chain2.cdf
+E:/AX301/21_sd_sdram_vga/rtl/sd_ip/SD_TOP.v
+E:/AX301/21_sd_sdram_vga/rtl/sd_ip/SD_initial.v
+E:/AX301/21_sd_sdram_vga/rtl/sd_ip/SD_read.v
+E:/AX301/21_sd_sdram_vga/rtl/sd_sdram_vga.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/dcfifo_ctrl.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/rdfifo.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_2fifo_top.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_cmd.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_ctrl.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_para.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_pll.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_top.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_wr_data.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/wrfifo.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/sdram_vga_top.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/vga_ip/vga_display.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/vga_ip/vga_driver.v
+E:/AX301/21_sd_sdram_vga/rtl/sdram_vga_ip/vga_ip/vga_top.v
+E:/AX301/21_sd_sdram_vga/rtl/system_ctrl.v
+E:/AX301/21_sd_sdram_vga/sd_sdram_vga.qpf
+E:/AX301/21_sd_sdram_vga/sd_sdram_vga.qsf
+E:/AX301/21_sd_sdram_vga/sd_sdram_vga_assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Dec 28 13:16:04 2016
+Source archive file:	E:/AX301/21_sd_sdram_vga/sd_sdram_vga_tmp_archive.qar
+Archive was extracted into	E:/AX301/23_sd_sdram_lcd/
+		 - successfully.

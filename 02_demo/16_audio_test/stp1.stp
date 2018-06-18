@@ -1,0 +1,775 @@
+<session jtag_chain="USB-Blaster [USB-1]" jtag_device="@1: EP3C(10|5)/EP4CE(10|6) (0x020F10DD)" sof_file="audio_test.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="232"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="4"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="32512"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2016/11/23 18:06:50  #0">
+      <clock name="clk_50m" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="ADCDAT" tap_mode="classic" type="input pin"/>
+          <wire name="ADCLRC" tap_mode="classic" type="input pin"/>
+          <wire name="BCLK" tap_mode="classic" type="input pin"/>
+          <wire name="DACDAT" tap_mode="classic" type="output pin"/>
+          <wire name="DACLRC" tap_mode="classic" type="input pin"/>
+          <wire name="key_dect:key_dect_inst|play_en" tap_mode="classic" type="combinatorial"/>
+          <wire name="key_dect:key_dect_inst|record_en" tap_mode="classic" type="combinatorial"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[0]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[10]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[11]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[12]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[13]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[14]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[15]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[16]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[17]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[18]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[19]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[1]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[20]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[21]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[22]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[23]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[24]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[25]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[26]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[27]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[28]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[29]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[2]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[3]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[4]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[5]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[6]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[7]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[8]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[9]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[0]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[10]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[11]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[12]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[13]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[14]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[15]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[16]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[17]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[18]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[19]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[1]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[20]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[21]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[22]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[23]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[24]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[25]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[26]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[27]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[28]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[29]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[2]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[30]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[31]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[32]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[33]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[34]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[35]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[36]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[37]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[38]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[39]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[3]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[40]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[41]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[42]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[43]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[44]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[45]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[46]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[47]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[48]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[49]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[4]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[50]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[51]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[52]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[53]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[54]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[55]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[56]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[57]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[58]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[59]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[5]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[60]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[61]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[62]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[63]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[6]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[7]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[8]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[9]" tap_mode="classic" type="register"/>
+          <wire name="sys_data_in[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_rd" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_we" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="ADCDAT" tap_mode="classic" type="input pin"/>
+          <wire name="ADCLRC" tap_mode="classic" type="input pin"/>
+          <wire name="BCLK" tap_mode="classic" type="input pin"/>
+          <wire name="DACDAT" tap_mode="classic" type="output pin"/>
+          <wire name="DACLRC" tap_mode="classic" type="input pin"/>
+          <wire name="key_dect:key_dect_inst|play_en" tap_mode="classic" type="combinatorial"/>
+          <wire name="key_dect:key_dect_inst|record_en" tap_mode="classic" type="combinatorial"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[0]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[10]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[11]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[12]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[13]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[14]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[15]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[16]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[17]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[18]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[19]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[1]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[20]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[21]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[22]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[23]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[24]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[25]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[26]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[27]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[28]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[29]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[2]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[3]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[4]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[5]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[6]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[7]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[8]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[9]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[0]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[10]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[11]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[12]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[13]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[14]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[15]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[16]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[17]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[18]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[19]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[1]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[20]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[21]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[22]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[23]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[24]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[25]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[26]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[27]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[28]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[29]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[2]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[30]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[31]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[32]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[33]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[34]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[35]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[36]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[37]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[38]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[39]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[3]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[40]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[41]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[42]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[43]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[44]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[45]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[46]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[47]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[48]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[49]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[4]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[50]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[51]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[52]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[53]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[54]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[55]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[56]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[57]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[58]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[59]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[5]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[60]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[61]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[62]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[63]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[6]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[7]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[8]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[9]" tap_mode="classic" type="register"/>
+          <wire name="sys_data_in[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_rd" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_we" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="ADCDAT" tap_mode="classic" type="input pin"/>
+          <wire name="ADCLRC" tap_mode="classic" type="input pin"/>
+          <wire name="BCLK" tap_mode="classic" type="input pin"/>
+          <wire name="DACDAT" tap_mode="classic" type="output pin"/>
+          <wire name="DACLRC" tap_mode="classic" type="input pin"/>
+          <wire name="key_dect:key_dect_inst|play_en" tap_mode="classic" type="combinatorial"/>
+          <wire name="key_dect:key_dect_inst|record_en" tap_mode="classic" type="combinatorial"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[0]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[10]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[11]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[12]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[13]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[14]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[15]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[16]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[17]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[18]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[19]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[1]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[20]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[21]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[22]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[23]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[24]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[25]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[26]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[27]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[28]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[29]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[2]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[3]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[4]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[5]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[6]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[7]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[8]" tap_mode="classic" type="register"/>
+          <wire name="key_dect:key_dect_inst|voice_play_time[9]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[0]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[10]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[11]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[12]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[13]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[14]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[15]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[16]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[17]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[18]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[19]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[1]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[20]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[21]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[22]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[23]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[24]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[25]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[26]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[27]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[28]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[29]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[2]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[30]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[31]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[32]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[33]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[34]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[35]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[36]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[37]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[38]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[39]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[3]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[40]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[41]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[42]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[43]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[44]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[45]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[46]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[47]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[48]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[49]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[4]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[50]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[51]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[52]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[53]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[54]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[55]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[56]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[57]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[58]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[59]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[5]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[60]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[61]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[62]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[63]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[6]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[7]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[8]" tap_mode="classic" type="register"/>
+          <wire name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[9]" tap_mode="classic" type="register"/>
+          <wire name="sys_data_in[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_in[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_data_out[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_rd" tap_mode="classic" type="combinatorial"/>
+          <wire name="sys_we" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="ADCDAT"/>
+          <net is_signal_inverted="no" name="ADCLRC"/>
+          <net is_signal_inverted="no" name="DACDAT"/>
+          <net is_signal_inverted="no" name="DACLRC"/>
+          <bus is_signal_inverted="no" link="all" name="sys_data_in" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="sys_data_in[15]"/>
+            <net is_signal_inverted="no" name="sys_data_in[14]"/>
+            <net is_signal_inverted="no" name="sys_data_in[13]"/>
+            <net is_signal_inverted="no" name="sys_data_in[12]"/>
+            <net is_signal_inverted="no" name="sys_data_in[11]"/>
+            <net is_signal_inverted="no" name="sys_data_in[10]"/>
+            <net is_signal_inverted="no" name="sys_data_in[9]"/>
+            <net is_signal_inverted="no" name="sys_data_in[8]"/>
+            <net is_signal_inverted="no" name="sys_data_in[7]"/>
+            <net is_signal_inverted="no" name="sys_data_in[6]"/>
+            <net is_signal_inverted="no" name="sys_data_in[5]"/>
+            <net is_signal_inverted="no" name="sys_data_in[4]"/>
+            <net is_signal_inverted="no" name="sys_data_in[3]"/>
+            <net is_signal_inverted="no" name="sys_data_in[2]"/>
+            <net is_signal_inverted="no" name="sys_data_in[1]"/>
+            <net is_signal_inverted="no" name="sys_data_in[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="sys_data_out" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="sys_data_out[15]"/>
+            <net is_signal_inverted="no" name="sys_data_out[14]"/>
+            <net is_signal_inverted="no" name="sys_data_out[13]"/>
+            <net is_signal_inverted="no" name="sys_data_out[12]"/>
+            <net is_signal_inverted="no" name="sys_data_out[11]"/>
+            <net is_signal_inverted="no" name="sys_data_out[10]"/>
+            <net is_signal_inverted="no" name="sys_data_out[9]"/>
+            <net is_signal_inverted="no" name="sys_data_out[8]"/>
+            <net is_signal_inverted="no" name="sys_data_out[7]"/>
+            <net is_signal_inverted="no" name="sys_data_out[6]"/>
+            <net is_signal_inverted="no" name="sys_data_out[5]"/>
+            <net is_signal_inverted="no" name="sys_data_out[4]"/>
+            <net is_signal_inverted="no" name="sys_data_out[3]"/>
+            <net is_signal_inverted="no" name="sys_data_out[2]"/>
+            <net is_signal_inverted="no" name="sys_data_out[1]"/>
+            <net is_signal_inverted="no" name="sys_data_out[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="sys_rd"/>
+          <net is_signal_inverted="no" name="sys_we"/>
+          <net is_signal_inverted="no" name="key_dect:key_dect_inst|play_en"/>
+          <net is_signal_inverted="no" name="key_dect:key_dect_inst|record_en"/>
+          <bus is_signal_inverted="no" link="all" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[63]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[62]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[61]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[60]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[59]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[58]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[57]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[56]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[55]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[54]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[53]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[52]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[51]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[50]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[49]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[48]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[47]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[46]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[45]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[44]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[43]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[42]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[41]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[40]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[39]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[38]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[37]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[36]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[35]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[34]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[33]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[32]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[31]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[30]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[29]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[28]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[27]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[26]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[25]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[24]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[23]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[22]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[21]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[20]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[19]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[18]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[17]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[16]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[15]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[14]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[13]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[12]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[11]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[10]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[9]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[8]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[7]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[6]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[5]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[4]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[3]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[2]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[1]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="key_dect:key_dect_inst|voice_play_time" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[29]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[28]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[27]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[26]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[25]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[24]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[23]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[22]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[21]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[20]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[19]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[18]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[17]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[16]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[15]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[14]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[13]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[12]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[11]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[10]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[9]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[8]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[7]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[6]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[5]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[4]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[3]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[2]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[1]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="BCLK"/>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="ADCDAT"/>
+          <net is_signal_inverted="no" name="ADCLRC"/>
+          <net is_signal_inverted="no" name="DACDAT"/>
+          <net is_signal_inverted="no" name="DACLRC"/>
+          <bus is_signal_inverted="no" link="all" name="sys_data_in" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="sys_data_in[15]"/>
+            <net is_signal_inverted="no" name="sys_data_in[14]"/>
+            <net is_signal_inverted="no" name="sys_data_in[13]"/>
+            <net is_signal_inverted="no" name="sys_data_in[12]"/>
+            <net is_signal_inverted="no" name="sys_data_in[11]"/>
+            <net is_signal_inverted="no" name="sys_data_in[10]"/>
+            <net is_signal_inverted="no" name="sys_data_in[9]"/>
+            <net is_signal_inverted="no" name="sys_data_in[8]"/>
+            <net is_signal_inverted="no" name="sys_data_in[7]"/>
+            <net is_signal_inverted="no" name="sys_data_in[6]"/>
+            <net is_signal_inverted="no" name="sys_data_in[5]"/>
+            <net is_signal_inverted="no" name="sys_data_in[4]"/>
+            <net is_signal_inverted="no" name="sys_data_in[3]"/>
+            <net is_signal_inverted="no" name="sys_data_in[2]"/>
+            <net is_signal_inverted="no" name="sys_data_in[1]"/>
+            <net is_signal_inverted="no" name="sys_data_in[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="sys_data_out" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="sys_data_out[15]"/>
+            <net is_signal_inverted="no" name="sys_data_out[14]"/>
+            <net is_signal_inverted="no" name="sys_data_out[13]"/>
+            <net is_signal_inverted="no" name="sys_data_out[12]"/>
+            <net is_signal_inverted="no" name="sys_data_out[11]"/>
+            <net is_signal_inverted="no" name="sys_data_out[10]"/>
+            <net is_signal_inverted="no" name="sys_data_out[9]"/>
+            <net is_signal_inverted="no" name="sys_data_out[8]"/>
+            <net is_signal_inverted="no" name="sys_data_out[7]"/>
+            <net is_signal_inverted="no" name="sys_data_out[6]"/>
+            <net is_signal_inverted="no" name="sys_data_out[5]"/>
+            <net is_signal_inverted="no" name="sys_data_out[4]"/>
+            <net is_signal_inverted="no" name="sys_data_out[3]"/>
+            <net is_signal_inverted="no" name="sys_data_out[2]"/>
+            <net is_signal_inverted="no" name="sys_data_out[1]"/>
+            <net is_signal_inverted="no" name="sys_data_out[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="sys_rd"/>
+          <net is_signal_inverted="no" name="sys_we"/>
+          <net is_signal_inverted="no" name="key_dect:key_dect_inst|play_en"/>
+          <net is_signal_inverted="no" name="key_dect:key_dect_inst|record_en"/>
+          <bus is_signal_inverted="no" link="all" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[63]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[62]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[61]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[60]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[59]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[58]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[57]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[56]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[55]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[54]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[53]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[52]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[51]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[50]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[49]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[48]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[47]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[46]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[45]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[44]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[43]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[42]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[41]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[40]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[39]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[38]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[37]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[36]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[35]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[34]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[33]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[32]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[31]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[30]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[29]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[28]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[27]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[26]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[25]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[24]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[23]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[22]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[21]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[20]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[19]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[18]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[17]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[16]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[15]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[14]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[13]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[12]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[11]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[10]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[9]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[8]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[7]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[6]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[5]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[4]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[3]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[2]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[1]"/>
+            <net is_signal_inverted="no" name="mywav:mywav_inst|sinwave_gen:sinwave_gen_inst|wave_data_reg[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="key_dect:key_dect_inst|voice_play_time" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[29]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[28]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[27]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[26]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[25]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[24]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[23]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[22]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[21]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[20]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[19]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[18]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[17]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[16]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[15]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[14]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[13]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[12]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[11]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[10]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[9]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[8]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[7]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[6]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[5]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[4]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[3]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[2]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[1]"/>
+            <net is_signal_inverted="no" name="key_dect:key_dect_inst|voice_play_time[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="BCLK"/>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2016/11/23 18:06:50  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1024" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2016/11/23 18:06:50  #2"/>
+          <extradata/>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget height" value="151"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="column width" size="23" value="34,34,241,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="frame size" size="2" value="1920,1033"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+  </global_info>
+</session>

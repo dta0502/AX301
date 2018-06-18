@@ -1,0 +1,110 @@
+module Game_ctrl_module
+//游戏控制模块 根据游戏状态产生相应控制信号	
+
+(
+	input Clk_50mhz,
+	input Rst_n,
+	
+	input Key_left,//4个按键
+	input Key_right,
+	input Key_up,
+	input Key_down,
+	
+	output reg [1:0] Game_status,//4个游戏状态
+	
+	input Hit_wall_sig,//撞墙
+	input Hit_body_sig,//碰到自己的身体
+	
+	output reg Flash_sig,//失败出现的FLASH
+	output reg Restart_sig//重新开始
+		
+);
+		
+	localparam RESTART = 2'b00;
+	localparam START = 2'b01;
+	localparam PLAY = 2'b10;
+	localparam END = 2'b11;
+	
+	reg [31:0] Count1;//32位的计数器
+	
+	always@(posedge Clk_50mhz or negedge Rst_n)
+	begin
+		if(!Rst_n)
+			begin
+				Game_status <= START;//复位的时候，送START状态
+				Count1 <= 0;
+				Flash_sig <= 1;
+				Restart_sig <= 0;
+			end
+		else
+			begin
+				case(Game_status)//选择游戏状态
+					RESTART:
+							begin//在RESTART状态里
+								 if(Count1 <= 5)//如果计数器小于等于5
+									begin
+										Count1 <= Count1 + 1;
+										Restart_sig <= 1;
+									end
+								 else 
+									begin
+										Game_status <= START;
+										Count1 <= 0;
+										Restart_sig <= 0;
+									end
+							end
+	
+					START:
+						  begin//在START状态里，有任意一个按键按下，则送PLAY状态
+								if(Key_left|
+									Key_right|
+									Key_up|
+									Key_down)
+									
+									Game_status <= PLAY;
+								else
+									Game_status <= Game_status;
+						  end
+		
+					PLAY://PLAY状态，如果撞墙或者碰到自己身体，送END状态
+							begin
+								if(Hit_wall_sig|Hit_body_sig)
+									Game_status <= END;
+								else
+									Game_status <= Game_status;
+							end
+			/*************************************/
+		
+					END:
+						begin//END状态
+							if(Count1 <= 200_000_000)
+								begin
+									Count1 <= Count1 + 1'b1;
+									if(Count1 == 25_000_000)//时间达到0.5S
+										Flash_sig <= 0;
+									else if(Count1 == 50_000_000)//时间达到1.0S
+										Flash_sig <= 1'b1;
+									else if(Count1 == 75_000_000)//以此类推
+										Flash_sig <= 1'b0;
+									else if(Count1 == 100_000_000)
+										Flash_sig <= 1'b1;
+									else if(Count1 == 125_000_000)
+										Flash_sig <= 1'b0;
+									else if(Count1 == 150_000_000)
+										Flash_sig <= 1'b1;
+									else
+										Flash_sig <= 1'd1;//~~~
+								end                    //目的是使出现闪烁效果	
+							else
+								begin
+									Flash_sig <= 1;
+									Count1 <= 0;
+									Game_status <= RESTART;
+								end
+						end
+				endcase
+		   end
+	end
+	
+	endmodule
+	

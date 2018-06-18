@@ -1,0 +1,49 @@
+
+State Machine - |sd_sdram_lcd|sdram_lcd_top:u_sdram_lcd_top|lcd_top:u_lcd_top|lcd_driver:u_lcd_driver|num_counter
+Name num_counter.011 num_counter.010 num_counter.001 num_counter.000 
+num_counter.000 0 0 0 0 
+num_counter.001 0 0 1 1 
+num_counter.010 0 1 0 1 
+num_counter.011 1 0 0 1 
+
+State Machine - |sd_sdram_lcd|sdram_lcd_top:u_sdram_lcd_top|data_combine:u_data_combine|state_write
+Name state_write.000 state_write.010 state_write.001 
+state_write.000 0 0 0 
+state_write.001 1 0 1 
+state_write.010 1 1 0 
+
+State Machine - |sd_sdram_lcd|sdram_lcd_top:u_sdram_lcd_top|sdram_2fifo_top:u_sdram_2fifo_top|sdram_top:u_sdramtop|sdram_ctrl:module_001|work_state_r
+Name work_state_r.1011 work_state_r.1010 work_state_r.1001 work_state_r.1000 work_state_r.0111 work_state_r.0110 work_state_r.0101 work_state_r.0100 work_state_r.0011 work_state_r.0010 work_state_r.0001 work_state_r.0000 
+work_state_r.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+work_state_r.0001 0 0 0 0 0 0 0 0 0 0 1 1 
+work_state_r.0010 0 0 0 0 0 0 0 0 0 1 0 1 
+work_state_r.0011 0 0 0 0 0 0 0 0 1 0 0 1 
+work_state_r.0100 0 0 0 0 0 0 0 1 0 0 0 1 
+work_state_r.0101 0 0 0 0 0 0 1 0 0 0 0 1 
+work_state_r.0110 0 0 0 0 0 1 0 0 0 0 0 1 
+work_state_r.0111 0 0 0 0 1 0 0 0 0 0 0 1 
+work_state_r.1000 0 0 0 1 0 0 0 0 0 0 0 1 
+work_state_r.1001 0 0 1 0 0 0 0 0 0 0 0 1 
+work_state_r.1010 0 1 0 0 0 0 0 0 0 0 0 1 
+work_state_r.1011 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |sd_sdram_lcd|sdram_lcd_top:u_sdram_lcd_top|sdram_2fifo_top:u_sdram_2fifo_top|sdram_top:u_sdramtop|sdram_ctrl:module_001|init_state_r
+Name init_state_r.1001 init_state_r.1000 init_state_r.0111 init_state_r.0110 init_state_r.0101 init_state_r.0100 init_state_r.0011 init_state_r.0010 init_state_r.0001 init_state_r.0000 
+init_state_r.0000 0 0 0 0 0 0 0 0 0 0 
+init_state_r.0001 0 0 0 0 0 0 0 0 1 1 
+init_state_r.0010 0 0 0 0 0 0 0 1 0 1 
+init_state_r.0011 0 0 0 0 0 0 1 0 0 1 
+init_state_r.0100 0 0 0 0 0 1 0 0 0 1 
+init_state_r.0101 0 0 0 0 1 0 0 0 0 1 
+init_state_r.0110 0 0 0 1 0 0 0 0 0 1 
+init_state_r.0111 0 0 1 0 0 0 0 0 0 1 
+init_state_r.1000 0 1 0 0 0 0 0 0 0 1 
+init_state_r.1001 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |sd_sdram_lcd|SD_TOP:u_SD_TOP|SD_read:SD_read_inst|mystate
+Name mystate~5 mystate~4 mystate~3 
+mystate.idle 0 0 0 
+mystate.read 0 1 1 
+mystate.read_wait 1 0 0 
+mystate.read_data 1 0 1 
+mystate.read_done 1 1 0 

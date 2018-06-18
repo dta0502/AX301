@@ -1,0 +1,88 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\AX301\pll_test\simulation\modelsim
+T_opt
+VK2GD`g>f:oiNS26C^OT8[3
+04 11 4 work pll_test_tb fast 0
+=1-2c534a01a10c-58298570-204-2b34
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.1c;51
+vpll
+IoW^U33b_W7;kR:fUb^e`e2
+V4mBg2NY6zIz8b[@60kZR01
+Z1 dE:\AX301\pll_test\simulation\modelsim
+w1479113046
+8E:/AX301/pll_test/ipcore/pll.v
+FE:/AX301/pll_test/ipcore/pll.v
+L0 39
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 BT3;PZDg[k=YSHhJQjIQh2
+!s85 0
+!s108 1479116143.591000
+!s107 E:/AX301/pll_test/ipcore/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/AX301/pll_test/ipcore|E:/AX301/pll_test/ipcore/pll.v|
+!s92 -vlog01compat -work work +incdir+E:/AX301/pll_test/ipcore -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vpll_altpll
+I>U?SGcGZ4>3]4:nOTVf6I0
+V?DF8j=RJ_EcKZlDzF;fMW0
+R1
+w1479114404
+8E:/AX301/pll_test/db/pll_altpll.v
+FE:/AX301/pll_test/db/pll_altpll.v
+L0 30
+R2
+r1
+31
+R3
+!i10b 1
+!s100 4lRPBdHz9kC3ddi43?OPH1
+!s85 0
+!s108 1479116144.000000
+!s107 E:/AX301/pll_test/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/AX301/pll_test/db|E:/AX301/pll_test/db/pll_altpll.v|
+!s92 -vlog01compat -work work +incdir+E:/AX301/pll_test/db -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vpll_test
+IMOZDH83e@@=`3`>7_Eckh1
+VFIVYmJlb4`zhLEQFCAij41
+R1
+w1479114388
+8E:/AX301/pll_test/pll_test.v
+FE:/AX301/pll_test/pll_test.v
+L0 5
+R2
+r1
+31
+R3
+!i10b 1
+!s100 >02[ASdUQOM_DERg<TCSc2
+!s85 0
+!s108 1479116143.842000
+!s107 E:/AX301/pll_test/pll_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/AX301/pll_test|E:/AX301/pll_test/pll_test.v|
+!s92 -vlog01compat -work work +incdir+E:/AX301/pll_test -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vpll_test_tb
+ICDUnDHBT3CPdcZMPCFkI<1
+VYmC5hE8Jae@Z>25e_@7IY1
+R1
+w1479116092
+8E:/AX301/pll_test/simulation/modelsim/pll_test.vt
+FE:/AX301/pll_test/simulation/modelsim/pll_test.vt
+L0 2
+R2
+r1
+31
+R3
+!i10b 1
+!s100 G:Al60bL<`2hG_;6ci2:A0
+!s85 0
+!s108 1479116144.167000
+!s107 E:/AX301/pll_test/simulation/modelsim/pll_test.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/AX301/pll_test/simulation/modelsim|E:/AX301/pll_test/simulation/modelsim/pll_test.vt|
+!s92 -vlog01compat -work work +incdir+E:/AX301/pll_test/simulation/modelsim -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
